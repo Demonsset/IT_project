@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+body{
+    background-color: rgb(252, 239, 225);
+    color: #333;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    border-bottom: 1px solid goldenrod;
+}
+.logo h2{
+    color: #8b6b3f;
+    font-size: 30px;
+}
+.logo p{
+    font-size: 14px;
+    color: #666;
+}
+
+.logo{
+    height: auto;
+    width: 50px;
+    background-color: rgba(127, 255, 212, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(img/WhatsApp_Image_2026-04-26_at_6.43.19_PM-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #2b241c;
+    padding: 10px 40px;
+    gap: 25px;
+}
+.navbar a{
+    margin-left: 35px;
+    text-decoration: none;
+    color: #ad936d;
+    font-size: 15px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #f4b400;
+    font-size: large;
+    transform: scale(1.05);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 30px;
+}
+.vid video{
+    width: 470px;
+    height: 300px;
+    border-radius: 10px;
+}
+.title{
+    text-align: center;
+    margin-top: 30px;
+}
+.title p{
+    color: #8b6b3f;
+    font-size: 30px;
+}
+.title h1{
+    font-size: 55px;
+    margin: 10px 0;
+}
+.title hr{
+    width: 200px;
+    margin: auto;
+    border: 1px solid #8b6b3f;
+}
+.info{
+    width: 450px;
+    border: 2px solid #b48b57;
+    border-radius: 20px;
+    padding: 20px;
+}
+.info h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.info p{
+    margin-bottom: 15px;
+}
+.info ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.info li{
+    margin-bottom: 8px;
+}
+.ticket{
+    width: 280px;
+    border: 2px solid #b48b57;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 40px;
+    text-align: center;
+}
+.ticket h2{
+    margin-bottom: 10px;
+}
+.ticket p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+button{
+    background-color: #e89128;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+button:hover{
+    background: #bd6b08;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+@media (max-width: 1024px){
+  nav {
+    padding: 10px 20px;
+  }
+}
