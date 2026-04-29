@@ -11,7 +11,7 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     color: #2c2412;
 }
-.rimg{
+.imgr{
     background-image: url(img/download\ r.png);
     justify-content: left;
     align-items: flex-start;
@@ -42,7 +42,7 @@ body {
 }
 
 .logo-icon {
-    width: 70px;
+    width: 90px;
     height: auto;
 }
 
@@ -78,7 +78,9 @@ body {
     color: #c49a1b;
     border-bottom-color: #c49a1b;
 }
-
+.imr{
+    margin-left: 40%;
+}
 /* ========== HERO SECTION ========== */
 .hero-section {
     display: flex;
@@ -102,16 +104,21 @@ body {
     max-height: 320px;
     object-fit: cover;
 }
-
+.imgr{
+    background-image: url(img/download\ r.png);
+    justify-content: left;
+    align-items: flex-start;
+}
 .title-block {
     flex: 1;
     text-align: center;
     background: rgba(255,250,225,0.6);
-    padding: 20px 16px;
+    padding: 1px 1px 1px 10px;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .discover-tag {
@@ -170,10 +177,9 @@ body {
     background: linear-gradient(135deg, #c49a1b, #9e6f1a);
     transform: scale(1.02);
 }
-.imr{
+.k{
     margin: 40px 0 50px;
 }
-
 /* Info Card */
 .info-card {
     flex: 1.4;
@@ -183,6 +189,7 @@ body {
     padding: 20px 24px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.05);
     transition: 0.2s;
+    margin-right: 0px;
 }
 
 .info-card h2 {
@@ -230,7 +237,6 @@ body {
     width: 24px;
     height: 24px;
 }
-
 /* ========== LANDMARKS SECTION ========== */
 .landmarks-title {
     text-align: center;
