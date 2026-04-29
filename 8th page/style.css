@@ -11,7 +11,11 @@ body {
     font-family: 'Georgia', 'Times New Roman', serif;
     color: #2c2412;
 }
-
+.rimg{
+    background-image: url(img/download\ r.png);
+    justify-content: left;
+    align-items: flex-start;
+}
 /* main container */
 .rome-container {
     max-width: 1300px;
@@ -165,6 +169,9 @@ body {
 .explore-btn:hover {
     background: linear-gradient(135deg, #c49a1b, #9e6f1a);
     transform: scale(1.02);
+}
+.imr{
+    margin: 40px 0 50px;
 }
 
 /* Info Card */
@@ -435,6 +442,9 @@ body {
     }
     .info-list {
         grid-template-columns: 1fr 1fr;
+    }
+    .rimg{
+        margin: 25px, 0;
     }
 }
 
