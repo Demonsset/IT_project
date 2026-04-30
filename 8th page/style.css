@@ -46,6 +46,7 @@ body {
 }
 
 .logo-text h2 {
+    font-family: 'UnifrakturMaguntia';
     font-size: 28px;
     letter-spacing: 2px;
     color: #b8860b;
