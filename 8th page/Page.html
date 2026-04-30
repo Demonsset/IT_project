@@ -6,6 +6,8 @@
     <title>Ancient Rome | Discover the Eternal City</title>
     <meta name="description" content="Explore the wonders of Ancient Rome - Colosseum, Roman Forum, Pantheon. Book your historical journey today.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="rome-container">
@@ -22,22 +24,18 @@
             </div>
             </div>
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Login</a>
-                <a href="#">Countries</a>
-                <a href="#">Contact Us</a>
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-arrow-right-to-bracket"></i> Login</a>
+                <a href="#"><i class="fas fa-earth-europe"></i> Countries</a>
+                <a href="#"><i class="fas fa-address-book"></i> Contact Us</a>
+                <a href="#" title="Switch to the other style"><i class="fas fa-code-compare"></i></a>
+                <a href="#" title="Switch to the other theme"><i class="fas fa-moon"></i></a>
             </div>
         </div>
 
         <!-- Hero Section -->
         <div class="hero-section">
-            <div class="video-block">
-                <video controls poster="img/Colosseo_2020.jpg.webp">
-                    <source src="videoplayback.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="imgr">
-            </div>
+            <div class="box">
             <div class="title-block">
                 <div class="discover-tag">Discover the wonders of</div>
                 <h1>Ancient ROME</h1>
@@ -48,7 +46,12 @@
                 </div>
                 <a href="https://www.royalcaribbean.com/inspire/famous-landmarks-in-rome" class="explore-btn" target="_blank">Explore more about Roman civilization →</a>
             </div>
-            <div class="k"><img src="img/col-removebg-preview.png"></div>
+            <div class="video-block">
+                <video controls poster="img/Colosseo_2020.jpg.webp">
+                    <source src="videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
             <!-- Information Card -->
             <div class="info-card">
                 <h2><img src="img/roman-helmet.png" width="24"> Ancient ROME</h2>
@@ -103,27 +106,19 @@
                 </div>
             </div>
             <div class="monument-card">
+                <div class="card-img" style="background-image: url('img/f-castel-sant-angelo-bridge.jpg'); background-size: cover;"></div>
+                <div class="card-content">
+                    <h3>Castel Sant’Angelo</h3>
+                    <p>One of Rome’s most versatile monuments, standing as a witness to nearly 2,000 years of the city's turbulent history. </p>
+                    <a href="https://www.britannica.com/topic/Castel-SantAngelo" class="details-link">Details →</a>
+                </div>
+            </div>
+            <div class="monument-card">
                 <div class="card-img" style="background-image: url('img/stock-photo-st-peters-basilica-on-saint-square-italy-1297572451jpg.webp'); background-size: cover;"></div>
                 <div class="card-content">
                     <h3>St. Peter’s Basilica</h3>
                     <p>one of the holiest and most impressive churches in the world,  its soaring dome and intricate interior make it one of the most famous landmarks in Rome.</p>
                     <a href="https://www.britannica.com/topic/Saint-Peters-Basilica" class="details-link">Details →</a>
-                </div>
-            </div>
-            <div class="monument-card">
-                <div class="card-img" style="background-image: url('img/sistine-chapel-vatican-city.avif'); background-size: cover;"></div>
-                <div class="card-content">
-                    <h3>The Vatican Museums & Sistine Chapel</h3>
-                    <p>One of the most significant art collections in the world, spanning over nine miles of galleries within the Vatican City. The journey culminates in the Sistine Chapel, a site of immense religious importance and the location of the Papal conclave.</p>
-                    <a href="https://www.italia.it/en/lazio/rome/things-to-do/vatican-museums-and-sistine-chapel" class="details-link">Details →</a>
-                </div>
-            </div>
-            <div class="monument-card">
-                <div class="card-img" style="background-image: url('img/piazza-de-spagna-rome-europe.avif'); background-size: cover;"></div>
-                <div class="card-content">
-                    <h3>The Spanish Steps</h3>
-                    <p>One of Europe’s most iconic urban landscapes. This grand 135-step staircase was built between 1723 and 1725 to bridge the gap between the Spanish Embassy's square at the base and the French church, Trinità dei Monti, perched at the top.</p>
-                    <a href="https://www.britannica.com/place/Spanish-Steps" class="details-link">Details →</a>
                 </div>
             </div>
             <div class="monument-card">
@@ -135,19 +130,28 @@
                 </div>
             </div>
             <div class="monument-card">
+                <div class="card-img" style="background-image: url('img/piazza-de-spagna-rome-europe.avif'); background-size: cover;"></div>
+                <div class="card-content">
+                    <h3>The Spanish Steps</h3>
+                    <p>One of Europe’s most iconic urban landscapes. This grand 135-step staircase was built between 1723 and 1725 to bridge the gap between the Spanish Embassy's square at the base and the French church, Trinità dei Monti, perched at the top.</p>
+                    <a href="https://www.britannica.com/place/Spanish-Steps" class="details-link">Details →</a>
+                </div>
+            </div>
+            <div class="monument-card">
+                <div class="card-img" style="background-image: url('img/sistine-chapel-vatican-city.avif'); background-size: cover;"></div>
+                <div class="card-content">
+                    <h3>The Vatican Museums & Sistine Chapel</h3>
+                    <p>One of the most significant art collections in the world, spanning over nine miles of galleries within the Vatican City. The journey culminates in the Sistine Chapel, a site of immense religious importance and the location of the Papal conclave.</p>
+                    <a href="https://www.italia.it/en/lazio/rome/things-to-do/vatican-museums-and-sistine-chapel" class="details-link">Details →</a>
+                </div>
+            </div>
+            <div class="ticac">
+             <div class="monument-card">
                 <div class="card-img" style="background-image: url('img/Altare-della-Patria-or-Vittorio-Emanuele-II-Monument-Rome-Italy.webp'); background-size: cover;"></div>
                 <div class="card-content">
                     <h3>Altare della Patria (Victor Emmanuel II Monument)</h3>
                     <p>One of Rome’s most imposing and recognizable landmarks, this colossal white marble monument was built to honor Victor Emmanuel II, the first king of a unified Italy, and the spirit of the Risorgimento.</p>
                     <a href="https://www.britannica.com/place/Victor-Emmanuel-II-Monument" class="details-link">Details →</a>
-                </div>
-            </div>
-             <div class="monument-card">
-                <div class="card-img" style="background-image: url('img/f-castel-sant-angelo-bridge.jpg'); background-size: cover;"></div>
-                <div class="card-content">
-                    <h3>Castel Sant’Angelo</h3>
-                    <p>One of Rome’s most versatile monuments, standing as a witness to nearly 2,000 years of the city's turbulent history. </p>
-                    <a href="https://www.britannica.com/topic/Castel-SantAngelo" class="details-link">Details →</a>
                 </div>
             </div>
         </div>
@@ -176,7 +180,7 @@
                 <button class="book-ticket-btn" id="bookRomeBtn">Book Your Ticket </button>
             </div>
         </div>
-
+        </div>
         <!-- Footer -->
         <div class="footer-note">
             © 2026 Global Monument Exploration project - Helwan University | Discover the glory of the world
