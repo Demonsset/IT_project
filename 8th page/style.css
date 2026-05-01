@@ -79,6 +79,15 @@ body {
     border-bottom-color: #c49a1b;
 }
 
+#icon{
+    color: #4a3412;
+}
+
+#icon:hover{
+    color: #c49a1b;
+    border-bottom-color: #c49a1b;
+}
+
 .imr{
     margin-left: 20%;
 }
@@ -130,6 +139,7 @@ body {
 }
 
 .title-block h1 {
+    font-family: 'UnifrakturCook';
     font-size: 54px;
     font-weight: 700;
     margin: 8px 0, 0, 0;
@@ -232,6 +242,10 @@ body {
     padding: 6px 12px;
     border-radius: 40px;
     border: 1px solid #f5e5c4;
+}
+
+i{
+    color: #daa520;
 }
 
 .info-list li img {
