@@ -6,7 +6,6 @@
 body {
   min-height: 100vh;
   background-image: url("WhatsApp\ Image\ 2026-04-30\ at\ 2.01.39\ AM.jpeg");
- 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,14 +13,6 @@ body {
   flex-direction: column;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
-.menu-toggle {
-  display: none;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -49,7 +40,7 @@ nav {
   font-size: 15px;
   display: flex;
   align-items: center;
-  gap: 6px;
+  
   transition: 0.3s;
 }
 
@@ -57,18 +48,14 @@ nav {
 .navbar a.active {
   color: #f4b400; 
   font-size: large;
-  transform: scale(1.05); 
+
 }
 
-:root {
-  --nav-bg: #f0eddd;
-  --nav-text: #816f53;
-}
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/*فووووووووووووووووتررررررررررررررررررررر */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -102,7 +89,7 @@ body {
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 
-/* main */
+
 .all {
   flex: 1;
   display: flex;
@@ -126,7 +113,7 @@ body {
 }
 .all div {
   color: white;
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 1px 4px #ffffff33;
 }
 
 
@@ -137,12 +124,11 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  
 }
 
 button:hover {
   background-color: #f4b400;
-
   padding: 10px 20px;
   background-color: #ad936d;
   color: white;
@@ -154,12 +140,10 @@ button:hover {
 
 button:hover {
   background-color: #f4b400;
-  transform: scale(1.05);
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-/* ريسبونسيف */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -187,50 +171,6 @@ button:hover {
     margin-bottom: 10px;
   }
 }
-
-@media (max-width: 1024px)
- {
-  nav {
-    padding: 10px 20px;
-  }
-
-  .all {
-    font-size: 18px;
-    padding: 30px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: var(--nav-bg);
-    flex-direction: column;
-    padding: 20px;
-    transition: 0.3s;
-  }
-
-  .navbar.active {
-    right: 0;
-  }
-
-  .navbar a {
-    color: var(--nav-text);
-  }
-
-  .navbar a:hover {
-    color: #f4b400;
-  }
-}
-
 
 
 /* --------------------------------------------- */
@@ -277,7 +217,3 @@ body.dark-mode .navbar a.active {
   color: #f4b400;
 }
 
-body.dark-mode { /* بتاع البار الي بتطلع من الجنب*/
-  --nav-bg: #2b241c;
-  --nav-text: #c2b096;
-}
