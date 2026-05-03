@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <nav class="navbar">
         <div class="logo">
             <img src="logo.png" alt="Treasures Logo"> 
@@ -19,11 +20,11 @@
             <li><a href="#"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
             <li><a href="#"><i class="fas fa-globe"></i> COUNTRIES</a></li>
             <li><a href="#"><i class="fas fa-envelope"></i> CONTACT US</a></li>
-            <li><a href="#" class="sync-icon"><i class="fas fa-sync"></i></a></li>
+            <li><a href="#" class="sync-icon"><i class="fas fa-moon"></i></a></li>
             
         </ul>
     </nav>
-
+    
 
     <div class="perant">
         <div class="overlay"></div>
@@ -55,26 +56,17 @@
     <footer class="main-footer">
         <div class="footer-content">
             <p class="copyright-text">© 2026 Global Monument Exploration project - Helwan University | Discover the glory of the world</p>
+
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
 
 
-    <script>
 
-    const modeToggle = document.querySelector('.sync-icon');
-    const body = document.body;
-
-    modeToggle.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        body.classList.toggle('light-mode');
-        const icon = this.querySelector('i');
-        if (body.classList.contains('light-mode')) {
-            icon.classList.replace('fa-sync', 'fa-moon');
-        } else {
-            icon.classList.replace('fa-moon', 'fa-sync');
-        }
-    });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
