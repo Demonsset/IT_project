@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-image: url('photo.jpeg'); 
+    background-image: url('img/photo.jpeg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(43, 36, 28, 0.8); 
+    background: #e8e3d8; 
 }
 
 .logo img {
@@ -135,7 +135,7 @@ body {
     width: 100%;
     z-index: 1000;
     padding: 15px 50px;
-    background: rgba(43, 36, 28, 0.85); 
+    background: #e8e3d8; 
     border-top: 1px solid rgba(173, 147, 109, 0.3); 
 
     display: flex;
@@ -202,7 +202,7 @@ body {
     z-index: 1000;
     padding: 15px 50px;
 
-    background: rgba(43, 36, 28, 0.85); 
+    background: #e8e3d8; 
     border-top: 1px solid rgba(173, 147, 109, 0.3); 
     display: flex;
     justify-content: center;
@@ -230,7 +230,7 @@ body {
 
 body.light-mode .navbar, 
 body.light-mode .main-footer {
-    background: #ffffff !important; 
+    background: #2b241cd3 !important; 
     border-color: #ddd;
 }
 
@@ -261,17 +261,17 @@ body.light-mode .social-links a:hover
 }
 
 body.light-mode .navbar {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: #2b241c !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 body.light-mode .main-footer {
-    background: rgba(255, 255, 255, 0.95) !important;
+    background: #2b241c !important;
     border-top: 1px solid #ddd;
 }
 
 body.light-mode .temple-form {
-    background: rgba(255, 255, 255, 0.95) !important; 
+    background: #2b241c !important; 
     border: 1px solid #ad936d;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
