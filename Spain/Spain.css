@@ -25,7 +25,8 @@ position: sticky; top: 0; z-index: 1;
 }
 .logo img{
     height: 60px;
-    width:80px;
+    width:60px;
+    margin-left:14px;
 }
 .video-block video{
     width: 450px;
