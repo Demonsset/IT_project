@@ -18,8 +18,8 @@ function toggleDarkMode() {
 }
 
 
-document.getElementById('theme-toggle').onclick = toggleDarkMode;
-const layoutBtn = document.getElementById('layout-toggle');
+document.getElementById('theme-layout').onclick = toggleDarkMode;
+const layoutBtn = document.getElementById('theme-layout');
 
 
 if (localStorage.getItem('layout') === 'sidebar') {

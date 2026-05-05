@@ -15,14 +15,13 @@ body {
     justify-content: left;
     align-items: flex-start;
 }
-/* main container */
+
 .rome-container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-/* ========== HEADER / NAVIGATION ========== */
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -83,6 +82,15 @@ body {
     color: #4a3412;
 }
 
+#moon{
+    color: #4a3412;
+}
+
+#moon:hover{
+    color: #c49a1b;
+    border-bottom-color: #c49a1b;
+}
+
 #icon:hover{
     color: #c49a1b;
     border-bottom-color: #c49a1b;
@@ -91,8 +99,8 @@ body {
 .imr{
     margin-left: 20%;
 }
-/* ========== HERO SECTION ========== */
-.hero-section {
+
+.body-section {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -190,7 +198,6 @@ body {
     transform: scale(1.02);
 }
 
-/* Info Card */
 .info-card {
     flex: 1.4;
     background: #fffaf0;
@@ -252,7 +259,7 @@ i{
     width: 24px;
     height: 24px;
 }
-/* ========== LANDMARKS SECTION ========== */
+
 .landmarks-title {
     text-align: center;
     margin: 20px 0 30px;
@@ -333,7 +340,6 @@ i{
     border-color: #b8860b;
 }
 
-/* ========== TICKET SECTION ========== */
 .ticket-showcase {
     display: flex;
     justify-content: center;
@@ -443,7 +449,7 @@ i{
     display: flex;
     flex-direction: row;
 }
-/* Footer */
+
 .footer-note {
     text-align: center;
     margin-top: 50px;
@@ -453,7 +459,15 @@ i{
     color: #6b4e1e;
 }
 
-/* Responsive Design */
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    color: #6b4e1e;
+}
+
 @media (max-width: 900px) {
     .hero-section {
         flex-direction: column;
@@ -491,12 +505,99 @@ i{
         font-size: 28px;
     }
 }
-:root {
-    --primary-color: #b8860b;
-    --secondary-color: #d4af37;
-    --bg-color: #fef8e7;
-    --text-color: #2c2412;
-    --card-bg: #fffaf0;
-    --button-gradient: linear-gradient(135deg, #d4af37, #b8860b);
-    --font-family: Georgia, "Times New Roman", serif;
+
+#theme-switch{
+    color: #4a3412;
+    background-color: #00000000;
+    border: solid #00000000;
+}
+
+#theme-switch:hover{
+    color: #c49a1b;
+    border-bottom-color: #c49a1b;
+}
+
+#sun{
+    display: none;
+}
+
+.darkmode #moon{
+    display: none;
+}
+
+.darkmode{
+    background-color: rgb(14, 109, 84) !important
+}
+
+.darkmode #sun{
+    display: block;
+}
+
+.darkmode .nav-bar p{
+    color: #a27608;
+}
+
+.darkmode .nav-bar a{
+    color: #9d7c42;
+}
+
+.darkmode #icon{
+    color: #9d7c42;
+}
+
+.darkmode .nav-bar a:hover{
+    color: goldenrod;
+}
+
+.darkmode #icon:hover{
+    color: goldenrod;
+}
+
+.darkmode #sun{
+
+    image: url(../sunny_24dp_9D7C42_FILL1_wght400_GRAD0_opsz24.png);
+}
+
+
+.darkmode .title-block{
+    background-color: transparent;
+}
+
+.darkmode .info-list li{
+   background-color: #e6c175;
+}
+
+.darkmode .info-card{
+    background-color: #bc6513;
+}
+
+.darkmode .info-card h2{
+    color: #744e12;
+}
+
+.darkmode .monument-card{
+    background-color: rgb(111, 77, 15);
+}
+
+.darkmode .monument-card p{
+    color: #2c2412;
+}
+
+.darkmode .ticket-card{
+    background-color: #4a3303;
+}
+
+.darkmode .ticket-sub{
+    color: #917330;
+}
+
+.darkmode .ticket-details-row{
+    background-color: #b39352;
+}
+
+.darkmode .footer-note{
+    color: rgb(130, 99, 22);
+}
+.darkmode .footer-note:hover{
+    color: goldenrod;
 }

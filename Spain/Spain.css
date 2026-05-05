@@ -17,27 +17,31 @@
 nav{
 background-color: #9B2335;   
  display: flex;
- border-radius: 10px 10px 0 0;
+position: sticky; top: 0; z-index: 1;
     align-items:center;
     justify-content: space-between;
     padding-left:20px;
     padding-right:20px;
 }
 .logo img{
-    height: auto;
-    width:80px;
+    height: 60px;
+    width:60px;
+    margin-left:14px;
 }
 .video-block video{
     width: 450px;
     height: 250px;
+    outline: 3px solid var(--secondary);
+    outline-offset: 8px;
     object-fit:cover;
-border-radius : 12px;
-box-shadow: 0 0 24px rgba(0,0,0,0.5);
+    flex:1;
+background: linear-gradient(135deg,#fff0f0,#fdf0e0);
+    border-radius:16px;
 }
 .links{
     display: flex;
    list-style: none;
-   gap:25px;
+   gap:15px;
 
 }
 .links a{
@@ -58,17 +62,22 @@ box-shadow: 0 0 24px rgba(0,0,0,0.5);
    color:white;
    border-radius:50%;
    border: none;
-   padding-right:10px;
+ display: inline-block;
+
    cursor:pointer;
     transition: all 0.3s ease;
 
 }
+
 #layoutToggle{
    background-color: transparent;
    color:white;
+   font-size:16px;
+ display: inline-block;
+
    border-radius:50%;
    border: none;
-   padding-left:10px;
+  
    cursor:pointer;
     transition: all 0.3s ease;
 
@@ -177,13 +186,10 @@ padding-bottom:6px;
     display:block;
     height:2px;
     background-color: #D4AF37  ;
-   
     width:140px;
     margin-bottom:10px;
 }
 .info-card h2 img{vertical-align: middle;}
-
-
 .info-card li{
     padding-left:3px;
     font-size: 16px;
@@ -192,10 +198,446 @@ padding-bottom:6px;
     list-style: none;
     color: var(--text);
 }
+.landmarks h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #c0392b;           
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.landmarks {
+    padding: 40px 30px;
+    background-color: #fff9f0; }
+
+
+.landmarks-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+
+.landmark-card {
+    border-radius: 16px;
+    overflow: hidden;             
+    background-color: #ffffff;
+    width: 260px;
+    border: 2px solid #e8d5a3;   
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+.landmark-card:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+}
+.landmark-card img {
+    width: 100%;
+    object-fit: cover;         
+    display: block;
+    height: 190px;
+}
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.card-text h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #8B1A1A;              
+}
+
+.card-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4a3728;             
+}
+
+.card-link {
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 6px;
+    padding: 6px 16px;
+    background-color: #8B1A1A;  
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 2px solid #d4af37;    
+    color: #F5E6C8;               
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.card-link:hover {
+    background-color: #d4af37;    
+    color: #8B1A1A;
+}
+
+
+
+.booking {
+    display: flex;
+    align-items: stretch;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #D4AF37;
+   background: linear-gradient(135deg, #931111, #7B1515);
+}
+
+.bookingleft, .bookingcenter, .bookingright {
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #F5E6C8;
+}
+
+.bookingcenter {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    border-left: 1px solid rgba(212, 175, 55, 0.4);
+    border-right: 1px solid rgba(212, 175, 55, 0.4);
+}
+.bookingcenter h2 {
+    color: #D4AF37;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.bookingprice {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+.bookingright a{
+    text-decoration:none;
+    color:#F5E6C8 ;
+    width:fit-content;
+    font-size:large;
+    padding:10px;
+    background-color: #8B1A1A;
+  
+    border-radius:10px;
+    border: 2px solid #D4AF37; 
+    transition:all 0.3s ease;
+    display:block;
+   will-change: transform; /*di bt2ol ll browser eghaz ll transform eli he7sl f btmni el shutter eli be7sl mid hovering */
+}
+.bookingright a:hover{
+    transform:translateY(-3px);
+    background-color: #D4AF37;
+    color:#8B1A1A;
+}
+.rezero {
+    background-color: #9B2335;
+    text-align: center;
+    padding: 20px;
+    color: #F5E6C8;
+}
+
+.rezero p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.iconsss {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconsss a {
+    color: #F5E6C8;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.iconsss a:hover {
+    color: #D4AF37;
+    transform: translateY(-3px);
+}
 
 
 
 
+body.dark-mode {
+    background-color: #0f0f1a;
+    color: #e8d5a3;
+}
+body.dark-mode nav {
+    background-color: #1a0a0a;
+     display: flex;
+ border-radius: 10px 10px 0 0;
+}
+
+
+body.dark-mode .hero {
+    background-color: #0f0f1a;
+}
+
+
+body.dark-mode .title-block h1 {
+    color: #c9a84c;
+}
+
+body.dark-mode .title-block p {
+    color: #c9a84c;
+}
+
+body.dark-mode .title-block a {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .title-block a:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+
+body.dark-mode .info-card {
+    background: linear-gradient(135deg, #1a0f0f, #1a1a2e);
+    border-color: #c9a84c;
+    color: #e8d5a3;
+}
+
+body.dark-mode .info-card h2 {
+    color: #c9a84c;
+}
+
+body.dark-mode .info-card p,
+body.dark-mode .info-card li {
+    color: #e8d5a3;
+}
+body.dark-mode .line {
+    background-color: #c9a84c;
+}
+
+body.dark-mode .landmarks {
+    background-color: #0f0f1a;
+}
+
+body.dark-mode .landmarks h2 {
+    color: #c9a84c;
+}
+
+
+body.dark-mode .landmark-card {
+    background-color: #1a1a2e;
+    border-color: #2e2e4a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .card-text h3 {
+    color: #c9a84c;
+}
+
+body.dark-mode .card-text p {
+    color: #b0a090;
+}
+
+body.dark-mode .card-link {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .card-link:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+body.dark-mode .booking {
+    background: linear-gradient(135deg, #1a0a0a, #0f0f1a);
+    border-color: #c9a84c;
+}
+
+body.dark-mode .bookingleft,
+body.dark-mode .bookingcenter,
+body.dark-mode .bookingright {
+    color: #e8d5a3;
+}
+
+body.dark-mode .bookingcenter h2 {
+    color: #c9a84c;
+}
+
+body.dark-mode .bookingprice {
+    color: #c9a84c;
+}
+
+body.dark-mode .bookingright a {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .bookingright a:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+
+body.dark-mode .rezero {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+}
+
+body.dark-mode .iconsss a {
+    color: #e8d5a3;
+}
+
+body.dark-mode .iconsss a:hover {
+    color: #c9a84c;
+}
+body.dark-mode .bookingdivider{
+   background-color: #c9a84c;
+   width: 200px;
+   height:1px;
+   border-radius: 3px;
+
+   
+}
+.bookingdivider{
+      background-color: #F5E6C8;
+   width: 200px;
+   border-radius: 3px;
+   height:1px;
+}
+
+.s2ndhero{
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.hero.secondlayout {
+    flex-direction: row-reverse;
+}
+
+.hero.secondlayout .s2ndhero {
+    flex-direction: row-reverse;
+}
+.hero.secondlayout .s2ndhero .info-card {
+    margin:auto;
+    max-width: fit-content;
+}
+.hero.secondlayout .video-block video{
+    margin-right:30px;
+}
+
+.hero.secondlayout .s2ndhero .title-block{
+    margin-left :30px;
+}
+.hero.secondlayout .s2ndhero .title-block {
+    text-align: center;
+    
+}
+.hero.secondlayout .s2ndhero .title-block a {
+    text-align: center;
+    align-self: center;
+}
+.hero.secondlayout .s2ndhero .title-block .divider {
+   align-self: center;
+
+}
+.hero.secondlayout .s2ndhero .title-block .divider .line{
+   align-self: center;
+   width:180px;
+}
+
+.hero.secondlayout ~ .landmarks .landmarks-table {
+    flex-direction: column ;
+    align-items: center;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card img {
+    width: 300px;
+    height: 100%;
+}
+
+.hero.secondlayout ~ .landmarks .card-body {
+    flex: 1;
+}
+
+.s2ndhero{
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.hero.secondlayout {
+    flex-direction: row-reverse;
+}
+
+.hero.secondlayout .s2ndhero {
+    flex-direction: row-reverse;
+}
+.hero.secondlayout .s2ndhero .info-card {
+    margin:auto;
+    max-width: fit-content;
+}
+.hero.secondlayout .video-block video{
+    margin-right:30px;
+}
+
+.hero.secondlayout .s2ndhero .title-block{
+    margin-left :30px;
+}
+.hero.secondlayout .s2ndhero .title-block {
+    text-align: center;
+    
+}
+.hero.secondlayout .s2ndhero .title-block a {
+    text-align: center;
+    align-self: center;
+}
+.hero.secondlayout .s2ndhero .title-block .divider {
+   align-self: center;
+
+}
+.hero.secondlayout .s2ndhero .title-block .divider .line{
+   align-self: center;
+   width:180px;
+}
+
+.hero.secondlayout ~ .landmarks .landmarks-table {
+    flex-direction: column ;
+    align-items: center;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card img {
+    width: 300px;
+    height: 100%;
+}
+
+.hero.secondlayout ~ .landmarks .card-body {
+    flex: 1;
+}
 
 
 
