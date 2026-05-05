@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Cairo', sans-serif;
-    background-image: url('photo.jpeg'); 
+    background-image: url('img/photo.jpeg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -48,10 +48,23 @@ body {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #f4b400; 
+.nav-links button{
+    text-decoration: none;
+    color: #ad936d; 
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+    border: transparent;
+    background-color: transparent;
 }
 
+.nav-links a:hover {
+    color: goldenrod; 
+}
+
+.nav-links button:hover{
+    color: goldenrod;
+}
 
 .perant {
     height: 100vh;
@@ -215,20 +228,20 @@ body {
 .copyright-text:hover {
     color: #f4b400;
 }
-body.light-mode .input-group input {
+body.darkmode .input-group input {
     color: #000000 !important; 
     background: rgba(0, 0, 0, 0.05) !important; 
     border: 1px solid #ad936d; 
 }
 
-body.light-mode .input-group input::placeholder {
+body.darkmode .input-group input::placeholder {
     color: #666666 !important; 
 }
 
-body.light-mode { background-image: url('photo.jpeg') !important; }
-body.light-mode .navbar, 
-body.light-mode .main-footer,
-body.light-mode .temple-form {
+body.darkmode { background-image: url('img/photo.jpeg') !important; }
+body.darkmode .navbar, 
+body.darkmode .main-footer,
+body.darkmode .temple-form {
     background: rgba(255, 255, 255, 0.95) !important;
     border-color: #ad936d !important;
 }

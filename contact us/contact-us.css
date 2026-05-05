@@ -159,34 +159,34 @@ input{
 .icons a:hover {
     color: #b8860b;
 } 
-.dark-mode #themeToggle,
-.dark-mode #menuToggle {
+.darkmode #themeToggle,
+.darkmode #menuToggle {
     color: #f4dec5;
 }
-.dark-mode #themeToggle:hover,
-.dark-mode #menuToggle:hover {
+.darkmode #themeToggle:hover,
+.darkmode #menuToggle:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     transition: 0.3s;
 }
-.dark-mode .link a{
+.darkmode .link a{
     color: #feead3;
 }
-.dark-mode .link a:hover {
+.darkmode .link a:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     font-size: 18px;
     transition: 0.3s;
 }
-.dark-mode .nav,
-.dark-mode footer {
+.darkmode .nav,
+.darkmode footer {
     background-color: #281802cf;
     color: #feead3;
 }
-.dark-mode .icons a {
+.darkmode .icons a {
     color: #f6e3cd;
 }
-.dark-mode .icons a:hover{
+.darkmode .icons a:hover{
     color: rgb(240, 188, 57);
 } 
  @media (max-width: 768px) {
