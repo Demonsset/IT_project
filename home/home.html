@@ -3,50 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Timeless Treasures</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="../script.js" defer></script>
 </head>
 <body>
     <header>
-        
         <nav>
             <div class="logo">
-               <img src="download 2.png" alt="">
-           </div>       
+                <img src="download 2.png" alt="">
+            </div>
             <ul class="navbar" id="navbar">
-                <li><a href="home.html" class="active"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="../home/home.html" class="active"><i class="fa-solid fa-house"></i> HOME</a></li>
                 <li><a href="../log in/index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> LOGIN</a></li>
                 <li><a href="../countries/countries.html"><i class="fa-solid fa-earth-europe"></i> COUNTRIES</a></li>
                 <li><a href="../contact us/contact-us.html"><i class="fa-solid fa-address-book"></i> CONTACT US</a></li>
-                <li><a href="" title="theme-switch" id="theme-switch"><i class="fa-solid fa-moon"></i></a></li>
-                <a href="#" id="layoutToggle"><i class="fa-solid fa-layer-group"></i></a>             
+                <li><button id="layoutToggle"><i class="fa-solid fa-layer-group"></i> LAYOUT</button></li>
+                <li><button id="theme-switch"><i class="fa-solid fa-moon"></i> <span class="theme-text dark-label"> DARK MODE</span><span class="theme-text light-label"> LIGHT MODE</span></button></li>
             </ul>
         </nav>
     </header>
-    <!-- --------------------------------------------------------->
-    
+
     <main class="all">
         <div>
             <h1 class="text1">Discover the History of the World</h1>
-                <p class="text2">A Journey Through Ancient Civilizations and Wonders</p>
-                <button><i class="fa-solid fa-magnifying-glass"></i> Explore Now</button>
-                <button class="login"><a href="../log in/index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> login</a></button>
-                
-            </div>
-        </main>
-        <!-- --------------------------------------------------------->
-        
-        <footer class="footer">
-            <p class="fo">© 2026-Global Monuments Exploration project-Helwan university</p>
-        
-            <div class="social">
+            <p class="text2">A Journey Through Ancient Civilizations and Wonders</p>
+            <button><i class="fa-solid fa-magnifying-glass"></i> Explore Now</button>
+            <button class="login"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="fo">© 2026-Global Monuments Exploration project-Helwan university</p>
+        <div class="social">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+
+    <script>
+        /* ── Theme Toggle ── */
+        const themeBtn = document.getElementById("theme-switch");
+        const themeIcon = themeBtn.querySelector("i");
+
+        themeBtn.addEventListener("click", function () {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+                themeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                themeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+
+        /* ── Layout Toggle ── */
+        const layoutToggle = document.getElementById("layoutToggle");
+        const layoutIcon = layoutToggle.querySelector("i");
+
+        layoutToggle.addEventListener("click", function () {
+            document.body.classList.toggle("sidebar-layout");
+            if (document.body.classList.contains("sidebar-layout")) {
+                layoutIcon.classList.replace("fa-layer-group", "fa-table-list");
+            } else {
+                layoutIcon.classList.replace("fa-table-list", "fa-layer-group");
+            }
+        });
+    </script>
+
 </body>
 </html>
