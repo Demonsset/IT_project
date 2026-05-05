@@ -140,45 +140,45 @@ button:hover {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-body.dark-mode {
+body.darkmode {
   background-image: none;
   color:  #2b241c;
 }
 
-body.dark-mode nav {
+body.darkmode nav {
  
     background-color: #2b241c;
     
 }
 
-body.dark-mode.navbar a {
+body.darkmode.navbar a {
  color: #c2b096;
 }
 
-body.dark-mode .footer {
+body.darkmode .footer {
   background-color: #2b241c;
  
 }
 
-body.dark-mode {
+body.darkmode {
   background-image: url("WhatsApp\ Image\ 2026-04-30\ at\ 2.01.39\ AM.jpeg");
 
   
 
 }
-body.dark-mode .menu-toggle {
+body.darkmode .menu-toggle {
   color: #c2b096;
 }
   
-body.dark-mode .social a {
+body.darkmode .social a {
 color: #c2b096;
 }
 
-body.dark-mode .navbar a:hover {
+body.darkmode .navbar a:hover {
   color: #f4b400;
 }
 
-body.dark-mode .navbar a.active {
+body.darkmode .navbar a.active {
   color: #f4b400;
 }
 
