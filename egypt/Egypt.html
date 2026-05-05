@@ -186,7 +186,7 @@
                             <p>200EGP</p>
                         </div>
                     </div>
-                     <button class="book">Book Your Ticket</button>
+                     <button class="book" id="bookBtn">Book Your Ticket</button>
                 </div>
             </div>
             <footer>
@@ -220,8 +220,12 @@
                     themeIcon.classList.replace("fa-sun", "fa-moon");
                 }
             });
+             document.getElementById("bookBtn").addEventListener("click", function () {
+                    alert("Your booking has been confirmed!");
+                });
         </script>
     </div>
+     <script src="script.js"></script> 
     <script src="Egypt.js"></script>
 </body>
 
