@@ -1,43 +1,41 @@
-*{
-
-}
-body{
+body {
     background-color: #e8e3d8;
     margin: 0;
     padding: 0;
-
 }
-.countries{
-    display: flex; 
-   /*  flex-wrap: wrap; */
+
+.countries {
+    display: flex;
     justify-content: center;
-    padding:40px 20px ;
+    padding: 40px 20px;
     gap: 30px;
     background-color: #e8e3d8;
-
 }
-.cards{
+
+.cards {
     border: 1px solid #2b241c;
-  
-    background-color:#e8e3d8;
-    width: 300px; 
+    display: block;
+    background-color: #e8e3d8;
+    width: 300px;
     text-align: center;
     padding: 15px;
     border-radius: 30px;
-    box-shadow: 0 5px 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     transition: 0.5s;
 }
-.cards:hover{
-    
-    transform: translatey(-10px);
+
+.cards:hover {
+    transform: translateY(-10px);
 }
-.cards img{
+
+.cards img {
     width: 100%;
     height: 170px;
     object-fit: cover;
     border-radius: 30px;
 }
-.cards a{
+
+.cards a {
     text-decoration: none;
     color: #a6894e;
     font-size: 30px;
@@ -45,173 +43,212 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1{
-    
+h1 {
     text-align: center;
     color: #a6894e;
     font-size: 50px;
-    border: 30px;
-    
-
 }
-.x{
-    
 
+.x {
     width: 300px;
     border: none;
     height: 1px;
     background-color: #a6894e;
-    border-bottom: 50px;
 }
-.y{
-     width:100% ;
-     border: none;
-     height: 1px;
-     background-color: #a6894e;
-     border-bottom: 50px;
-     margin: 0;
 
+.y {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: #a6894e;
+    margin: 0;
 }
+
 nav {
-    
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     align-items: center;
     background-color: #e8e3d8;
     padding: 0px 40px;
     margin: 0;
-    
 }
 
-.logo img  {
+.logo img {
     width: 100px;
     height: auto;
     cursor: pointer;
 }
 
-
-    
-
 nav ul {
-    
-        
-         list-style: none;
-        
-        
-        display: flex;
-        
-         gap: 25px;
-         
-         
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
-ul a{
+
+ul a {
     text-decoration: none;
     color: #a6894e;
     font-size: 15px;
     transition: 0.3s;
+    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 6px;
-
-
 }
 
 nav a:hover {
-               color: #f4b400;
-               font-size:large;
-               transform: scale(1.05);
+    color: #f4b400;
+    font-size: large;
+    transform: scale(1.05);
 }
+
 @media (max-width: 768px) {
-    
     ul {
-           flex-direction: column;
-            gap: 10px;
-            text-align: center;
-  }
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 }
-  
-  @media (max-width: 1024px){
+
+@media (max-width: 1024px) {
     nav {
-        padding: 10px 20px; 
+        padding: 10px 20px;
     }
-   
-    }
-p{
+}
+
+p {
     font-size: smaller;
     color: #2b241c;
-}    
+}
 
-footer{
+footer {
     background-color: #e8e3d8;
     height: 70px;
     text-align: center;
     color: #a6894e;
     font-size: large;
 }
-.social-links i{
-    color: #a6894e;
 
-} 
-button{
-    background-color:#a6894e;
+.social-links i {
+    color: #a6894e;
+}
+
+button {
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 20px;
-    color: #e8e3d8;
+    font-size: 15px;
+    color: #a6894e;
+    font-weight: bold;
     transition: 0.3s;
-    border-radius: 20px;
+    display: inline-block;
+}
+
+button:hover {
+    color: #f4b400;
+    font-size: large;
+    transform: scale(1.05);
+}
 
 
+body.darkmode,
+body.darkmode main,
+body.darkmode section,
+body.darkmode .countries {
+    background-color: #2b241c;
+    background-image: none;
 }
-.darkmode {
-    background-color: #2b241c  !important; 
-}
-.darkmode, 
-.darkmode main, 
-.darkmode section, 
-.darkmode .countries { 
-    background-color:#2b241c !important;
-    background-image: none !important;
-}
-.darkmode .cards, 
-.darkmode .cards div {}
-.darkmode header, 
-.darkmode nav, 
-.darkmode footer {
-    background-color:#2b241c !important;}
 
-.darkmode .cards, 
-.darkmode .cards div,
-.darkmode [class*="card"] {
-    background-color: #2b241c !important; 
-    border: 1px solid #a6894e; }
-.darkmode p{
+body.darkmode header,
+body.darkmode nav,
+body.darkmode footer {
+    background-color: #2b241c;
+}
+
+body.darkmode .cards {
+    background-color: #2b241c;
+    border: 1px solid #a6894e;
+}
+
+body.darkmode p {
     color: #e8e3d8;
 }
-     
-.sidebar-layout nav  {
-    align-items: center;
+
+
+.sidebar-layout nav {
     z-index: 1000;
-    background-color:#e8e3d8;
+    background-color: #e8e3d8;
     display: flex;
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 130px;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     padding-top: 40px;
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
-.sidebar-layout .countries { 
-    margin-left: 300px;
+
+.sidebar-layout .countries {
+    margin-left: 200px;
     transition: all 0.5s ease;
 }
-.sidebar-layout nav+hr{
-    display: none;
 
+.sidebar-layout nav + hr {
+    display: none;
 }
-.sidebar-layout ul{
+
+.sidebar-layout ul {
     flex-direction: column !important;
+    padding-left: 20px;
+}
+
+body.sidebar-layout nav ul li {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap; /*no wrap di bt5li kolo fe satr wa7ed mn8er ma ynzl t7t aw ay 7aga m4 7lwa*/
+}
+
+body.sidebar-layout button {
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+body.sidebar-layout #theme-switch {
+    white-space: nowrap;
+}
+
+body.darkmode.sidebar-layout nav {
+    background-color: #1a140f;
+    border-right: 1px solid #a6894e;
+}
+
+
+.theme-text {
+    display: none;
+    font-weight: bold;
+}
+
+.light-label {
+    display: none;
+}
+
+body.sidebar-layout .dark-label {
+    display: inline;
+}
+
+body.sidebar-layout .light-label {
+    display: none;
+}
+
+body.sidebar-layout.darkmode .dark-label {
+    display: none;
+}
+
+body.sidebar-layout.darkmode .light-label {
+    display: inline; /*vice versa*/
 }
