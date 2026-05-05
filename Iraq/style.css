@@ -333,7 +333,6 @@ footer {
   letter-spacing: 0.3px;
 }
 
-/* Social icons container */
 .footer-socials {
   display: flex;
   gap: 20px;
@@ -341,7 +340,6 @@ footer {
   justify-content: center;
 }
 
-/* Social icon links */
 .footer-socials a {
   display: inline-flex;
   align-items: center;
@@ -360,17 +358,16 @@ footer {
   transform: scale(1.15);
 }
 
-/* Facebook */
 .footer-socials a[aria-label="Facebook"] i {
   color: #5a4a32;
 }
 
-/* Instagram */
+
 .footer-socials a[aria-label="Instagram"] i {
   color: #5a4a32;
 }
 
-/* Twitter */
+
 .footer-socials a[aria-label="Twitter"] i {
   color: #5a4a32;
 }
@@ -378,7 +375,6 @@ footer {
 .footer-socials a:hover i {
   color: #c8a96e;
 }
-/* ========== DARK MODE ========== */
 
 .darkmode .perant {
     background: #1a0f00;

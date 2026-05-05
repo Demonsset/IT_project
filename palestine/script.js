@@ -2,9 +2,9 @@ const modeSwitch=document.getElementById('modeSwitch');
 const modeIcon=document.getElementById('modeIcon')
 const bodyElement =document.body;
 modeSwitch.addEventListener('click',(e) => {
-    bodyElement.classList.toggle('dark');
+    bodyElement.classList.toggle('darkmode');
 
-    if (document.body.classList.contains('dark')) {
+    if (document.body.classList.contains('darkmode')) {
         modeIcon.classList.remove('fa-sun');
         modeIcon.classList.add('fa-moon');
     } else {
