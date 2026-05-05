@@ -1,7 +1,7 @@
 const toggle = document.getElementById("themeToggle");
 toggle.addEventListener("click", function (e) {
     e.preventDefault();
-    document.body.classList.toggle("dark-mode");
+    document.body.classList.toggle("darkmode");
 });
  document.querySelector(".send").onclick = function () {
     let name = document.getElementById("name").value.trim();

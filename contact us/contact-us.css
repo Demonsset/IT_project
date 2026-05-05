@@ -159,34 +159,34 @@ input{
 .icons a:hover {
     color: #b8860b;
 } 
-.dark-mode #themeToggle,
-.dark-mode #menuToggle {
+.darkmode #themeToggle,
+.darkmode #menuToggle {
     color: #f4dec5;
 }
-.dark-mode #themeToggle:hover,
-.dark-mode #menuToggle:hover {
+.darkmode #themeToggle:hover,
+.darkmode #menuToggle:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     transition: 0.3s;
 }
-.dark-mode .link a{
+.darkmode .link a{
     color: #feead3;
 }
-.dark-mode .link a:hover {
+.darkmode .link a:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     font-size: 18px;
     transition: 0.3s;
 }
-.dark-mode .nav,
-.dark-mode footer {
+.darkmode .nav,
+.darkmode footer {
     background-color: #281802cf;
     color: #feead3;
 }
-.dark-mode .icons a {
+.darkmode .icons a {
     color: #f6e3cd;
 }
-.dark-mode .icons a:hover{
+.darkmode .icons a:hover{
     color: rgb(240, 188, 57);
 } 
 .nav.active {
@@ -219,11 +219,11 @@ input{
 .nav.active .logo1 {
     flex-direction: column;
 }
-.dark-mode .nav.active {
+.darkmode .nav.active {
     background-color: #342106d9;
 }
 
-.dark-mode.nav.active .links {
+.darkmode.nav.active .links {
     color: #feead3;
 }
  @media (max-width: 768px) {
@@ -234,6 +234,9 @@ input{
         gap: 10px;
         padding: 10px 0;
     }
+    .nav.active {
+            width:100px;
+    }
 
     .links {
         width: 100%;
@@ -241,11 +244,11 @@ input{
         gap: 15px;
         font-size: 16px;
     }
-
     .all {
-        width: 75%;
+        width: 68%;
         height: auto;
-        margin: 94px auto;
+        margin: 90px auto;
+        margin-left: 100px;
     }
 
     .in-form {
