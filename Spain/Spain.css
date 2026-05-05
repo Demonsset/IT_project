@@ -367,6 +367,12 @@ padding-bottom:6px;
 }
 
 
+#theme-switch{
+    color: ;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
 
 
 body.darkmode {

@@ -13,3 +13,4 @@ menuBtn.addEventListener("click", () => {
 document.getElementById("bookBtn").addEventListener("click", function () {
     alert("Your booking has been confirmed!");
 });
+
