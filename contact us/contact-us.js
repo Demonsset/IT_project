@@ -4,12 +4,19 @@ const menuBtn = document.getElementById("menuToggle");
 const nav = document.querySelector(".nav");
 const parent = document.querySelector(".perant");
 
+if (localStorage.getItem("darkmode") === "active") {
+    document.body.classList.add("darkmode");
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+}
+
 themeToggle.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
     if (document.body.classList.contains("darkmode")) {
         themeIcon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("darkmode", "active");
     } else {
         themeIcon.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("darkmode", null);
     }
 });
 
