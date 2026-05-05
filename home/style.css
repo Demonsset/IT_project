@@ -117,17 +117,19 @@ body {
 }
 
 
-button {
+button,
+button a {
   padding: 10px 20px;
   background-color: #ad936d;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  
+  text-decoration: none;
 }
 
-button:hover {
+button,
+button a:hover {
   background-color: #f4b400;
   padding: 10px 20px;
   background-color: #ad936d;
@@ -139,6 +141,10 @@ button:hover {
 }
 
 button:hover {
+  background-color: #f4b400;
+}
+
+button a:hover {
   background-color: #f4b400;
 }
 
