@@ -228,21 +228,21 @@ body {
     color: #f4b400;
 }
 
-body.light-mode .navbar, 
-body.light-mode .main-footer {
+body.darkmode .navbar, 
+body.darkmode .main-footer {
     background: #2b241cd3 !important; 
     border-color: #ddd;
 }
 
-body.light-mode .navbar .nav-links a,
-body.light-mode .navbar .logo,
-body.light-mode .copyright-text,
-body.light-mode .social-links a {
+body.darkmode .navbar .nav-links a,
+body.darkmode .navbar .logo,
+body.darkmode .copyright-text,
+body.darkmode .social-links a {
     color: #2b241c !important; 
 }
 
-body.light-mode .navbar .nav-links a:hover,
-body.light-mode .social-links a:hover
+body.darkmode .navbar .nav-links a:hover,
+body.darkmode .social-links a:hover
 {
     color: #ad936d !important; 
 }
@@ -260,36 +260,36 @@ body.light-mode .social-links a:hover
     transition: background-color 0.4s ease, color 0.4s ease, background 0.4s ease;
 }
 
-body.light-mode .navbar {
+body.darkmode .navbar {
     background: #2b241c !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-body.light-mode .main-footer {
+body.darkmode .main-footer {
     background: #2b241c !important;
     border-top: 1px solid #ddd;
 }
 
-body.light-mode .temple-form {
+body.darkmode .temple-form {
     background: #2b241c !important; 
     border: 1px solid #ad936d;
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-body.light-mode .temple-form h2, 
-body.light-mode .temple-form .input-group i,
-body.light-mode .navbar .nav-links a,
-body.light-mode .copyright-text,
-body.light-mode .social a {
+body.darkmode .temple-form h2, 
+body.darkmode .temple-form .input-group i,
+body.darkmode .navbar .nav-links a,
+body.darkmode .copyright-text,
+body.darkmode .social a {
     color: #2b241c !important; 
 }
 
-body.light-mode .input-group input {
+body.darkmode .input-group input {
     background: rgba(0, 0, 0, 0.05) !important; 
     color: #2b241c !important;
     border: 1px solid #ad936d;
 }
 
-body.light-mode {
+body.darkmode {
     background-image: url('photo.jpeg') !important;
 }
