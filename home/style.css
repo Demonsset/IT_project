@@ -55,7 +55,13 @@ nav {
     color: #f4b400;
     font-size: large;
 }
-
+.login a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    flex-wrap: nowrap;
+    
+}
 button {
     padding: 10px 20px;
     background-color: #ad936d;
