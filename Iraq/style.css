@@ -380,71 +380,71 @@ footer {
 }
 /* ========== DARK MODE ========== */
 
-body.dark .perant {
+.darkmode .perant {
     background: #1a0f00;
 }
 
-body.dark .nav {
+.darkmode .nav {
     background-color: #2b1800;
 }
 
-body.dark .link a {
+.darkmode .link a {
     color: #f0d9a0;
 }
 
-body.dark .pp {
+.darkmode .pp {
     color: #f0d9a0;
 }
 
-body.dark .information {
-    background-color: #2b1800;
-    color: #f0d9a0;
-}
-
-body.dark .write p,
-body.dark .write ul {
-    color: #f0d9a0;
-}
-
-body.dark .ticket {
+.darkmode .information {
     background-color: #2b1800;
     color: #f0d9a0;
 }
 
-body.dark .up b,
-body.dark .up p,
-body.dark .down p,
-body.dark .right p {
+.darkmode .write p,
+.darkmode .write ul {
     color: #f0d9a0;
 }
 
-body.dark .image {
+.darkmode .ticket {
     background-color: #2b1800;
-}
-
-body.dark .image p {
     color: #f0d9a0;
 }
 
-body.dark .video {
+.darkmode .up b,
+.darkmode .up p,
+.darkmode .down p,
+.darkmode .right p {
+    color: #f0d9a0;
+}
+
+.darkmode .image {
     background-color: #2b1800;
 }
 
-body.dark footer {
+.darkmode .image p {
+    color: #f0d9a0;
+}
+
+.darkmode .video {
+    background-color: #2b1800;
+}
+
+.darkmode footer {
     background-color: #2b1800;
     border-top: 2px solid goldenrod;
 }
 
-body.dark .footer-copyright {
+.darkmode .footer-copyright {
     color: #f0d9a0;
 }
 
-body.dark .footer-socials a,
-body.dark .footer-socials a i {
+.darkmode .footer-socials a,
+.darkmode .footer-socials a i {
     color: #f0d9a0;
 }
 
-#modeToggle {
+#theme-switch {
     background: goldenrod;
     border: none;
     border-radius: 20px;

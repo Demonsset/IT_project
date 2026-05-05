@@ -370,135 +370,135 @@ padding-bottom:6px;
 
 
 
-body.dark-mode {
+body.darkmode {
     background-color: #0f0f1a;
     color: #e8d5a3;
 }
-body.dark-mode nav {
+body.darkmode nav {
     background-color: #1a0a0a;
      display: flex;
  border-radius: 10px 10px 0 0;
 }
 
 
-body.dark-mode .hero {
+body.darkmode .hero {
     background-color: #0f0f1a;
 }
 
 
-body.dark-mode .title-block h1 {
+body.darkmode .title-block h1 {
     color: #c9a84c;
 }
 
-body.dark-mode .title-block p {
+body.darkmode .title-block p {
     color: #c9a84c;
 }
 
-body.dark-mode .title-block a {
+body.darkmode .title-block a {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
 
-body.dark-mode .title-block a:hover {
+body.darkmode .title-block a:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
 
 
-body.dark-mode .info-card {
+body.darkmode .info-card {
     background: linear-gradient(135deg, #1a0f0f, #1a1a2e);
     border-color: #c9a84c;
     color: #e8d5a3;
 }
 
-body.dark-mode .info-card h2 {
+body.darkmode .info-card h2 {
     color: #c9a84c;
 }
 
-body.dark-mode .info-card p,
-body.dark-mode .info-card li {
+body.darkmode .info-card p,
+body.darkmode .info-card li {
     color: #e8d5a3;
 }
-body.dark-mode .line {
+body.darkmode .line {
     background-color: #c9a84c;
 }
 
-body.dark-mode .landmarks {
+body.darkmode .landmarks {
     background-color: #0f0f1a;
 }
 
-body.dark-mode .landmarks h2 {
+body.darkmode .landmarks h2 {
     color: #c9a84c;
 }
 
 
-body.dark-mode .landmark-card {
+body.darkmode .landmark-card {
     background-color: #1a1a2e;
     border-color: #2e2e4a;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-body.dark-mode .card-text h3 {
+body.darkmode .card-text h3 {
     color: #c9a84c;
 }
 
-body.dark-mode .card-text p {
+body.darkmode .card-text p {
     color: #b0a090;
 }
 
-body.dark-mode .card-link {
+body.darkmode .card-link {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
 
-body.dark-mode .card-link:hover {
+body.darkmode .card-link:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
 
-body.dark-mode .booking {
+body.darkmode .booking {
     background: linear-gradient(135deg, #1a0a0a, #0f0f1a);
     border-color: #c9a84c;
 }
 
-body.dark-mode .bookingleft,
-body.dark-mode .bookingcenter,
-body.dark-mode .bookingright {
+body.darkmode .bookingleft,
+body.darkmode .bookingcenter,
+body.darkmode .bookingright {
     color: #e8d5a3;
 }
 
-body.dark-mode .bookingcenter h2 {
+body.darkmode .bookingcenter h2 {
     color: #c9a84c;
 }
 
-body.dark-mode .bookingprice {
+body.darkmode .bookingprice {
     color: #c9a84c;
 }
 
-body.dark-mode .bookingright a {
+body.darkmode .bookingright a {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
 
-body.dark-mode .bookingright a:hover {
+body.darkmode .bookingright a:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
 
 
-body.dark-mode .rezero {
+body.darkmode .rezero {
     background-color: #1a0a0a;
     color: #e8d5a3;
 }
 
-body.dark-mode .iconsss a {
+body.darkmode .iconsss a {
     color: #e8d5a3;
 }
 
-body.dark-mode .iconsss a:hover {
+body.darkmode .iconsss a:hover {
     color: #c9a84c;
 }
 
