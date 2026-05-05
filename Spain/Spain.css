@@ -30,14 +30,12 @@ background-color: #9B2335;
 .video-block video{
     width: 450px;
     height: 250px;
+    outline: 3px solid var(--secondary);
+    outline-offset: 8px;
     object-fit:cover;
-    
     flex:1;
 background: linear-gradient(135deg,#fff0f0,#fdf0e0);
-    border:2px solid var(--secondary); 
     border-radius:16px;
-border-radius : 12px;
-box-shadow: 0 0 24px rgba(0,0,0,0.5);
 }
 .links{
     display: flex;
@@ -377,7 +375,7 @@ body.darkmode {
 body.darkmode nav {
     background-color: #1a0a0a;
      display: flex;
- border-radius: 10px 10px 0 0;
+
 }
 
 
