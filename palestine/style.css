@@ -14,32 +14,6 @@
     --shadowHover: rgba(0, 0, 0, 0.25);    
     --borderColor: #544e3c62;  
 }
-body.dark{  
-    --bgMain:#1a1a1a;       
-    --bgNav:#2b241c;
-    --heroTitle: #6a5513;      
-    --textPrimary: #f0eddd;  
-    --textNav: #ad936d;
-    --cardBg: #1a1a1a;     
-    --shadowBtn: rgb(197,  160, 89,0.2);
-    --shadowHover: rgb(0, 0, 0, 0.5 );
-    --borderColor:#9A8346;
-}
-#layoutToggle{
-   background-color: transparent;
-   color:white;
-   font-size:16px;
-   display: inline-block;
-   border-radius:50%;
-   border: none;
-   cursor:pointer;
-    transition: all 0.3s ease;
-}
-#layoutToggle:hover{
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color:var(--accent);
-    transform: translateY(-3px);
-}
 body{
   font-family: sans-serif;
   background-color:var(--bgMain) ;
@@ -363,4 +337,31 @@ figcaption h3 {
 .social-links a:hover {
     color: var(--heroTitle);    
     transform: translateY(-3px);  
+}
+
+body.darkmode{  
+    --bgMain:#1a1a1a;       
+    --bgNav:#2b241c;
+    --heroTitle: #6a5513;      
+    --textPrimary: #f0eddd;  
+    --textNav: #ad936d;
+    --cardBg: #1a1a1a;     
+    --shadowBtn: rgb(197,  160, 89,0.2);
+    --shadowHover: rgb(0, 0, 0, 0.5 );
+    --borderColor:#9A8346;
+}
+#layoutToggle{
+   background-color: transparent;
+   color:white;
+   font-size:16px;
+   display: inline-block;
+   border-radius:50%;
+   border: none;
+   cursor:pointer;
+    transition: all 0.3s ease;
+}
+#layoutToggle:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color:var(--accent);
+    transform: translateY(-3px);
 }
