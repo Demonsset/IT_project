@@ -82,6 +82,15 @@ body {
     color: #4a3412;
 }
 
+#moon{
+    color: #4a3412;
+}
+
+#moon:hover{
+    color: #c49a1b;
+    border-bottom-color: #c49a1b;
+}
+
 #icon:hover{
     color: #c49a1b;
     border-bottom-color: #c49a1b;
@@ -450,6 +459,15 @@ i{
     color: #6b4e1e;
 }
 
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    color: #6b4e1e;
+}
+
 @media (max-width: 900px) {
     .hero-section {
         flex-direction: column;
@@ -488,26 +506,30 @@ i{
     }
 }
 
-.theme-switch{
+#theme-switch{
     color: #4a3412;
     background-color: #00000000;
     border: solid #00000000;
 }
 
-.theme-switch:hover{
+#theme-switch:hover{
     color: #c49a1b;
     border-bottom-color: #c49a1b;
 }
 
-.sun{
+#sun{
     display: none;
 }
 
-.darkmode .moon{
+.darkmode #moon{
     display: none;
 }
 
-.darkmode .sun{
+.darkmode{
+    background-color: rgb(85, 60, 29) !important
+}
+
+.darkmode #sun{
     display: block;
 }
 
@@ -515,8 +537,29 @@ i{
     color: #a27608;
 }
 
+.darkmode .nav-bar a{
+    color: #9d7c42;
+}
+
+.darkmode #icon{
+    color: #9d7c42;
+}
+
+.darkmode .nav-bar a:hover{
+    color: goldenrod;
+}
+
+.darkmode #icon:hover{
+    color: goldenrod;
+}
+
+.darkmode #sun{
+
+    image: url(../sunny_24dp_9D7C42_FILL1_wght400_GRAD0_opsz24.png);
+}
+
 .darkmode .rome-container{
-    background-color: #a06a3c !important;
+    background-color: rgb(85, 60, 29) !important;
 
 }
 
@@ -524,11 +567,29 @@ i{
     background-color: transparent;
 }
 
+.darkmode .info-list li{
+   background-color: #e6c175;
+}
+
 .darkmode .info-card{
     background-color: #50350f;
 }
 
 .darkmode .monument-card{
-    background-color: rgba(222, 162, 50, 0);
-    background-color: #3f2f26;
+    background-color: rgb(111, 77, 15);
+}
+
+.darkmode .ticket-card{
+    background-color: #4a3303;
+}
+
+.darkmode .ticket-details-row{
+    background-color: #b39352;
+}
+
+.darkmode .footer-note{
+    color: rgb(130, 99, 22);
+}
+.darkmode .footer-note:hover{
+    color: goldenrod;
 }

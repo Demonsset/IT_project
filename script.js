@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     console.log("loaded")
 
     let darkmode = localStorage.getItem('darkmode')
-    const themeSwitch = document.querySelector('.theme-switch')
+    const themeSwitch = document.getElementById('theme-switch')
     
     const enableDarkmode = () => {
     document.body.classList.add('darkmode')

@@ -163,33 +163,33 @@ button{
 
 
 }
-body.dark-mode {
+.darkmode {
     background-color: #2b241c  !important; 
 }
-body.dark-mode, 
-body.dark-mode main, 
-body.dark-mode section, 
-body.dark-mode .countries { 
+.darkmode, 
+.darkmode main, 
+.darkmode section, 
+.darkmode .countries { 
     background-color:#2b241c !important;
     background-image: none !important;
 }
-body.dark-mode .cards, 
-body.dark-mode .cards div {}
-body.dark-mode header, 
-body.dark-mode nav, 
-body.dark-mode footer {
+.darkmode .cards, 
+.darkmode .cards div {}
+.darkmode header, 
+.darkmode nav, 
+.darkmode footer {
     background-color:#2b241c !important;}
 
-body.dark-mode .cards, 
-body.dark-mode .cards div,
-body.dark-mode [class*="card"] {
+.darkmode .cards, 
+.darkmode .cards div,
+.darkmode [class*="card"] {
     background-color: #2b241c !important; 
     border: 1px solid #a6894e; }
-body.dark-mode p{
+.darkmode p{
     color: #e8e3d8;
 }
      
-body.sidebar-layout nav  {
+.sidebar-layout nav  {
     align-items: center;
     z-index: 1000;
     background-color:#e8e3d8;
@@ -204,14 +204,14 @@ body.sidebar-layout nav  {
     padding-top: 40px;
     box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
-body.sidebar-layout .countries { 
+.sidebar-layout .countries { 
     margin-left: 300px;
     transition: all 0.5s ease;
 }
-body.sidebar-layout nav+hr{
+.sidebar-layout nav+hr{
     display: none;
 
 }
-body.sidebar-layout ul{
+.sidebar-layout ul{
     flex-direction: column !important;
 }
