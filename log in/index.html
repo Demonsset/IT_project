@@ -6,33 +6,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <script src="../script.js" defer></script>
-    <li><a href="#" id="layoutToggle" class="layout-icon"><i class="fas fa-grip"></i></a></li>
 
 </head>
 
 
-    <body class="darkmode" id="theme-switch"> 
+    <body class="light-mode"> 
 
     <nav class="navbar">
         <div class="logo">
-            <img src="img/logo.png" alt="Treasures Logo"> 
+            <img src="logo.png" alt="Treasures Logo"> 
         </div>
    <ul class="nav-links">
-    <li><a href="../home/home.html"><i class="fas fa-home"></i> HOME</a></li>
-    <li><a href="../log in/index.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
-    <li><a href="../countries/countries.html"><i class="fas fa-globe"></i> COUNTRIES</a></li>
-    <li><a href="../contact us/contact-us.html"><i class="fas fa-envelope"></i> CONTACT US</a></li>
+    <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
+    <li><a href="#"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
+    <li><a href="#"><i class="fas fa-globe"></i> COUNTRIES</a></li>
+    <li><a href="#"><i class="fas fa-envelope"></i> CONTACT US</a></li>
     
-    <button id="menuToggle">
-        <i class="fas fa-code-compare"></i></button>
-    <button id="themeToggle">
-        <i class="fas fa-moon"></i></button>
-
     <li><a href="#" class="sync-icon mode-toggle"><i class="fas fa-sun"></i></a></li>
     
     <li><a href="#" id="layoutToggle"><i class="fas fa-right-left"></i></a></li>
-
 </ul>
     </nav>
     
@@ -75,6 +67,81 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const modeToggle = document.querySelector('.sync-icon');
+    const body = document.body;
+
+    if (modeToggle) {
+        modeToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            body.classList.toggle('light-mode');
+            const icon = this.querySelector('i');
+            
+            if (body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun'); 
+                icon.style.color = '#f4b400';
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon'); 
+                icon.style.color = '#ad936d'; 
+            }
+        });
+    }
+
+    const layoutToggle = document.getElementById('layoutToggle');
+    if (layoutToggle) {
+        layoutToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log("Layout button clicked!"); 
+            document.body.classList.toggle('sidebar-mode');
+            
+            const icon = this.querySelector('i');
+            if (icon) {
+                if (document.body.classList.contains('sidebar-mode')) {
+                    icon.style.transform = 'rotate(90deg)'; 
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            }
+        });
+    }
+
+    const loginForm = document.getElementById('epicLogin');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const usernameInput = this.querySelector('input[type="text"]');
+            const passwordInput = this.querySelector('input[type="password"]');
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value;
+            
+            // Validation
+            const nameRegex = /^[a-zA-Z\s\u0600-\u06FF]+$/;
+            if (!nameRegex.test(username)) {
+                alert("Please Enter The Name (Letters Only)");
+                usernameInput.focus();
+                return;
+            }
+            const passwordRegex = /^\d{8,}$/;
+            if (!passwordRegex.test(password)) {
+                alert("The Password Must be at least 8 digits Long (Numbers Only)");
+                passwordInput.focus();
+                return;
+            }
+            handleSuccess(username);
+        });
+    }
+});
+
+function handleSuccess(name) {
+    const btn = document.querySelector('.btn-epic');
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening Portal...';  
+    setTimeout(() => {
+        alert(`Welcome back, ${name}.`);
+        btn.innerHTML = '<i class="fas fa-door-open"></i> Open The Time Portal';
+    }, 1000);
+}
+</script>
 
 </body>
 </html>
