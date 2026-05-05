@@ -42,7 +42,6 @@ background: linear-gradient(135deg,#fff0f0,#fdf0e0);
     display: flex;
    list-style: none;
    gap:15px;
-
 }
 .links a{
     text-decoration:none;
@@ -57,37 +56,35 @@ background: linear-gradient(135deg,#fff0f0,#fdf0e0);
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transform: translateY(-3px);
 }
-#themeToggle{
+
+#theme-switch{
    background-color: transparent;
    color:white;
    border-radius:50%;
    border: none;
- display: inline-block;
-
+   display: inline-block;
    cursor:pointer;
-    transition: all 0.3s ease;
+   font-size:16px;
+   transition: all 0.3s ease;
+}
 
+#theme-switch:hover{
+   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+   color:var(--accent);
+   transform: translateY(-3px);
 }
 
 #layoutToggle{
    background-color: transparent;
    color:white;
    font-size:16px;
- display: inline-block;
-
+   display: inline-block;
    border-radius:50%;
    border: none;
-  
    cursor:pointer;
-    transition: all 0.3s ease;
-
+   transition: all 0.3s ease;
 }
 #layoutToggle:hover{
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    color:var(--accent);
-    transform: translateY(-3px);
-}
-#themeToggle:hover{
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     color:var(--accent);
     transform: translateY(-3px);
@@ -145,12 +142,11 @@ flex-direction: row;
     font-size:large;
     padding:10px;
     background-color: #8B1A1A;
-  
     border-radius:10px;
     border: 2px solid #D4AF37; 
     transition:all 0.3s ease;
     display:block;
-   will-change: transform; /*di bt2ol ll browser eghaz ll transform eli he7sl f btmni el shutter eli be7sl mid hovering */
+   will-change: transform;
 }
 .title-block a:hover{
     transform:translateY(-3px);
@@ -162,7 +158,6 @@ flex-direction: row;
     display:flex;
     flex-direction:column;
 box-shadow: 0 0 8px rgba(0,0,0,0.2);
-
     flex:1;
 background: linear-gradient(135deg,#fff0f0,#fdf0e0);
     border:2px solid var(--secondary); 
@@ -205,20 +200,16 @@ padding-bottom:6px;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
-
 .landmarks {
     padding: 40px 30px;
-    background-color: #fff9f0; }
-
-
+    background-color: #fff9f0;
+}
 .landmarks-table {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
 }
-
-
 .landmark-card {
     border-radius: 16px;
     overflow: hidden;             
@@ -246,19 +237,16 @@ padding-bottom:6px;
     text-decoration: none;
     gap: 8px;
 }
-
 .card-text h3 {
     font-size: 1.1rem;
     font-weight: 700;
     color: #8B1A1A;              
 }
-
 .card-text p {
     font-size: 0.9rem;
     line-height: 1.5;
     color: #4a3728;             
 }
-
 .card-link {
     display: inline-block;
     border-radius: 20px;
@@ -272,14 +260,10 @@ padding-bottom:6px;
     transition: all 0.3s ease;
     width: fit-content;
 }
-
 .card-link:hover {
     background-color: #d4af37;    
     color: #8B1A1A;
 }
-
-
-
 .booking {
     display: flex;
     align-items: stretch;
@@ -290,7 +274,6 @@ padding-bottom:6px;
     border: 2px solid #D4AF37;
    background: linear-gradient(135deg, #931111, #7B1515);
 }
-
 .bookingleft, .bookingcenter, .bookingright {
     padding: 30px 24px;
     display: flex;
@@ -298,7 +281,6 @@ padding-bottom:6px;
     gap: 8px;
     color: #F5E6C8;
 }
-
 .bookingcenter {
     flex: 1;
     text-align: center;
@@ -311,13 +293,11 @@ padding-bottom:6px;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
-
 .bookingprice {
     font-size: 1.6rem;
     font-weight: bold;
     color: #D4AF37;
 }
-
 .bookingright a{
     text-decoration:none;
     color:#F5E6C8 ;
@@ -325,12 +305,11 @@ padding-bottom:6px;
     font-size:large;
     padding:10px;
     background-color: #8B1A1A;
-  
     border-radius:10px;
     border: 2px solid #D4AF37; 
     transition:all 0.3s ease;
     display:block;
-   will-change: transform; /*di bt2ol ll browser eghaz ll transform eli he7sl f btmni el shutter eli be7sl mid hovering */
+   will-change: transform;
 }
 .bookingright a:hover{
     transform:translateY(-3px);
@@ -343,29 +322,26 @@ padding-bottom:6px;
     padding: 20px;
     color: #F5E6C8;
 }
-
 .rezero p {
     margin-bottom: 10px;
     font-size: 0.9rem;
 }
-
 .iconsss {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
 .iconsss a {
     color: #F5E6C8;
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
-
 .iconsss a:hover {
     color: #D4AF37;
     transform: translateY(-3px);
 }
 
+<<<<<<< HEAD
 
 #theme-switch{
     color: ;
@@ -375,52 +351,44 @@ padding-bottom:6px;
 }
 
 
+=======
+/* ── DARK MODE ─────────────────────────────────────── */
+>>>>>>> 1cf9efd4d36c780ed3a679e177cd06cceb390b88
 body.darkmode {
     background-color: #0f0f1a;
     color: #e8d5a3;
 }
 body.darkmode nav {
     background-color: #1a0a0a;
-     display: flex;
- border-radius: 10px 10px 0 0;
+    display: flex;
+    border-radius: 10px 10px 0 0;
 }
-
-
 body.darkmode .hero {
     background-color: #0f0f1a;
 }
-
-
 body.darkmode .title-block h1 {
     color: #c9a84c;
 }
-
 body.darkmode .title-block p {
     color: #c9a84c;
 }
-
 body.darkmode .title-block a {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
-
 body.darkmode .title-block a:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
-
-
 body.darkmode .info-card {
     background: linear-gradient(135deg, #1a0f0f, #1a1a2e);
     border-color: #c9a84c;
     color: #e8d5a3;
 }
-
 body.darkmode .info-card h2 {
     color: #c9a84c;
 }
-
 body.darkmode .info-card p,
 body.darkmode .info-card li {
     color: #e8d5a3;
@@ -428,81 +396,63 @@ body.darkmode .info-card li {
 body.darkmode .line {
     background-color: #c9a84c;
 }
-
 body.darkmode .landmarks {
     background-color: #0f0f1a;
 }
-
 body.darkmode .landmarks h2 {
     color: #c9a84c;
 }
-
-
 body.darkmode .landmark-card {
     background-color: #1a1a2e;
     border-color: #2e2e4a;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-
 body.darkmode .card-text h3 {
     color: #c9a84c;
 }
-
 body.darkmode .card-text p {
     color: #b0a090;
 }
-
 body.darkmode .card-link {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
-
 body.darkmode .card-link:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
-
 body.darkmode .booking {
     background: linear-gradient(135deg, #1a0a0a, #0f0f1a);
     border-color: #c9a84c;
 }
-
 body.darkmode .bookingleft,
 body.darkmode .bookingcenter,
 body.darkmode .bookingright {
     color: #e8d5a3;
 }
-
 body.darkmode .bookingcenter h2 {
     color: #c9a84c;
 }
-
 body.darkmode .bookingprice {
     color: #c9a84c;
 }
-
 body.darkmode .bookingright a {
     background-color: #1a0a0a;
     color: #e8d5a3;
     border-color: #c9a84c;
 }
-
 body.darkmode .bookingright a:hover {
     background-color: #c9a84c;
     color: #1a0a0a;
 }
-
-
 body.darkmode .rezero {
     background-color: #1a0a0a;
     color: #e8d5a3;
 }
-
 body.darkmode .iconsss a {
     color: #e8d5a3;
 }
-
 body.darkmode .iconsss a:hover {
     color: #c9a84c;
 }
@@ -511,27 +461,24 @@ body.darkmode .bookingdivider{
    width: 200px;
    height:1px;
    border-radius: 3px;
-
-   
 }
 .bookingdivider{
-      background-color: #F5E6C8;
+   background-color: #F5E6C8;
    width: 200px;
    border-radius: 3px;
    height:1px;
 }
 
+/* ── LAYOUT TOGGLE ─────────────────────────────────── */
 .s2ndhero{
     display: flex;
     flex: 1;
     align-items: stretch;
     gap: 30px;
 }
-
 .hero.secondlayout {
     flex-direction: row-reverse;
 }
-
 .hero.secondlayout .s2ndhero {
     flex-direction: row-reverse;
 }
@@ -542,13 +489,11 @@ body.darkmode .bookingdivider{
 .hero.secondlayout .video-block video{
     margin-right:30px;
 }
-
 .hero.secondlayout .s2ndhero .title-block{
-    margin-left :30px;
+    margin-left:30px;
 }
 .hero.secondlayout .s2ndhero .title-block {
     text-align: center;
-    
 }
 .hero.secondlayout .s2ndhero .title-block a {
     text-align: center;
@@ -556,101 +501,24 @@ body.darkmode .bookingdivider{
 }
 .hero.secondlayout .s2ndhero .title-block .divider {
    align-self: center;
-
 }
 .hero.secondlayout .s2ndhero .title-block .divider .line{
    align-self: center;
    width:180px;
 }
-
 .hero.secondlayout ~ .landmarks .landmarks-table {
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
 }
-
 .hero.secondlayout ~ .landmarks .landmark-card {
     width: 80%;
     display: flex;
     flex-direction: row;
 }
-
 .hero.secondlayout ~ .landmarks .landmark-card img {
     width: 300px;
     height: 100%;
 }
-
 .hero.secondlayout ~ .landmarks .card-body {
     flex: 1;
 }
-
-.s2ndhero{
-    display: flex;
-    flex: 1;
-    align-items: stretch;
-    gap: 30px;
-}
-
-.hero.secondlayout {
-    flex-direction: row-reverse;
-}
-
-.hero.secondlayout .s2ndhero {
-    flex-direction: row-reverse;
-}
-.hero.secondlayout .s2ndhero .info-card {
-    margin:auto;
-    max-width: fit-content;
-}
-.hero.secondlayout .video-block video{
-    margin-right:30px;
-}
-
-.hero.secondlayout .s2ndhero .title-block{
-    margin-left :30px;
-}
-.hero.secondlayout .s2ndhero .title-block {
-    text-align: center;
-    
-}
-.hero.secondlayout .s2ndhero .title-block a {
-    text-align: center;
-    align-self: center;
-}
-.hero.secondlayout .s2ndhero .title-block .divider {
-   align-self: center;
-
-}
-.hero.secondlayout .s2ndhero .title-block .divider .line{
-   align-self: center;
-   width:180px;
-}
-
-.hero.secondlayout ~ .landmarks .landmarks-table {
-    flex-direction: column ;
-    align-items: center;
-}
-
-.hero.secondlayout ~ .landmarks .landmark-card {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-}
-
-.hero.secondlayout ~ .landmarks .landmark-card img {
-    width: 300px;
-    height: 100%;
-}
-
-.hero.secondlayout ~ .landmarks .card-body {
-    flex: 1;
-}
-
-
-
-
-
-
-
-
-
-
