@@ -558,6 +558,9 @@ i{
     image: url(../sunny_24dp_9D7C42_FILL1_wght400_GRAD0_opsz24.png);
 }
 
+.darkmode .explore-btn{
+    color: rgb(14, 109, 84) ;
+}
 
 .darkmode .title-block{
     background-color: transparent;
@@ -576,19 +579,35 @@ i{
 }
 
 .darkmode .monument-card{
-    background-color: rgb(111, 77, 15);
+    background-color: rgb(94, 185, 141);
+}
+
+.darkmode .monument-card h3{
+    color: #04871a;
 }
 
 .darkmode .monument-card p{
     color: #2c2412;
 }
 
+.darkmode .monument-card a:hover{
+    color: #04871a;
+}
+
 .darkmode .ticket-card{
-    background-color: #4a3303;
+    background-color: #652f05;
 }
 
 .darkmode .ticket-sub{
-    color: #917330;
+    color: rgb(94, 185, 141);
+}
+
+.darkmode .ticket-showcase h4{
+    color: rgb(14, 109, 84) ;
+}
+
+.darkmode .book-ticket-btn{
+    color: rgb(14, 109, 84) ;
 }
 
 .darkmode .ticket-details-row{
@@ -596,7 +615,7 @@ i{
 }
 
 .darkmode .footer-note{
-    color: rgb(130, 99, 22);
+    color: rgb(170, 126, 12);
 }
 .darkmode .footer-note:hover{
     color: goldenrod;
