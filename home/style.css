@@ -5,12 +5,10 @@
 }
 body {
   min-height: 100vh;
-  background-image: url("WhatsApp\ Image\ 2026-04-30\ at\ 2.01.39\ AM.jpeg");
+  background-image: url("WhatsApp Image 2026-04-30 at 2.01.39 AM.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
 }
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 nav {
@@ -53,8 +51,6 @@ nav {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
-
-
 
 html, body {
   height: 100%;
@@ -150,37 +146,6 @@ button a:hover {
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .all {
-    font-size: 16px;
-    padding: 15px;
-  }
-
-  .text2 {
-    font-size: 14px;
-  }
-
-  button {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px;
-  }
-}
-
-
-/* --------------------------------------------- */
-
 body.darkmode {
   background-image: none;
   color:  #2b241c;
@@ -223,3 +188,17 @@ body.darkmode .navbar a.active {
   color: #f4b400;
 }
 
+/* لاي */
+.layout .navbar {
+    flex-direction: column;
+    width: 100%;
+}
+
+.layout nav {
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
