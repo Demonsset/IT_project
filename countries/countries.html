@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries | Timeless Treasure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="../home/home.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li><a href="../log in/index.html"><i class="fa-solid fa-right-to-bracket"></i> LOG IN</a></li>
+            <li><a href="countries.html"><i class="fa-solid fa-earth-americas"></i> COUNTRIES</a></li>
+            <li><a href="../contact us/contact-us.html"><i class="fa-solid fa-address-book"></i> CONTACT US</a></li>
+            <li><button id="layoutToggle"><i class="fa-solid fa-grip"></i> LAYOUT</button></li>
+       <li><button id="theme-switch"><i class="fa-solid fa-moon"></i> <span class="theme-text dark-label"> DARK MODE</span>
+        <span class="theme-text light-label"> LIGHT MODE</span></button></li>
+        </ul>
+    </nav>
+
+    <hr class="y">
+
+    <main>
+        <h1>Explore World Treasure</h1>
+        <hr class="x">
+        <section class="countries">
+
+            <div class="cards" title="go to explore">
+                <a href="../egypt/Egypt.html">
+                    <img src="images/pyramids.jpg" alt="pyramids">
+                    <h3>EGYPT</h3>
+                    <p>Discover the Monuments and landmarks of EGYPT</p>
+                    <span class="arrow">&#10142;</span>
+                </a>
+            </div>
+
+            <div class="cards" title="go to explore">
+                <a href="../palestine/palestine.html">
+                    <img src="images/El-Aqsa.jpg" alt="Al-Aqsa">
+                    <h3>PALESTINE</h3>
+                    <p>Discover the Monuments and landmarks of PALESTINE</p>
+                    <span class="arrow">&#10142;</span>
+                </a>
+            </div>
+
+            <div class="cards" title="go to explore">
+                <a href="../Iraq/iraq.html">
+                    <img src="images/hatra.jpg" alt="Hatra">
+                    <h3>IRAQ</h3>
+                    <p>Discover the Monuments and landmarks of IRAQ</p>
+                    <span class="arrow">&#10142;</span>
+                </a>
+            </div>
+
+            <div class="cards" title="go to explore">
+                <a href="../Spain/Spain.html">
+                    <img src="images/Alhambra.jpg" alt="Alhambra">
+                    <h3>SPAIN</h3>
+                    <p>Discover the Monuments and landmarks of SPAIN</p>
+                    <span class="arrow">&#10142;</span>
+                </a>
+            </div>
+
+            <div class="cards" title="go to explore">
+                <a href="../rome/rome.html">
+                    <img src="images/colsiom.jpg" alt="Colosseum">
+                    <h3>ROME</h3>
+                    <p>Discover the Monuments and landmarks of ITALY</p>
+                    <span class="arrow">&#10142;</span>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Global Monuments Exploration project - Helwan University</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        /* ── Theme Toggle ── */
+        const themeSwitch = document.getElementById("theme-switch");
+        const themeIcon = themeSwitch.querySelector("i");
+
+        themeSwitch.addEventListener("click", function () {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+                themeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                themeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+
+        /* ── Layout Toggle ── */
+        const layoutToggle = document.getElementById("layoutToggle");
+        const layoutIcon = layoutToggle.querySelector("i");
+
+        layoutToggle.addEventListener("click", function () {
+            document.body.classList.toggle("sidebar-layout");
+            if (document.body.classList.contains("sidebar-layout")) {
+                layoutIcon.classList.replace("fa-grip", "fa-table-list");
+            } else {
+                layoutIcon.classList.replace("fa-table-list", "fa-grip");
+            }
+        });
+    </script>
+
+</body>
+</html>
