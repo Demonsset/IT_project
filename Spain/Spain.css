@@ -341,7 +341,19 @@ padding-bottom:6px;
     transform: translateY(-3px);
 }
 
+<<<<<<< HEAD
+
+#theme-switch{
+    color: ;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
+
+
+=======
 /* ── DARK MODE ─────────────────────────────────────── */
+>>>>>>> 1cf9efd4d36c780ed3a679e177cd06cceb390b88
 body.darkmode {
     background-color: #0f0f1a;
     color: #e8d5a3;

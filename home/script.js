@@ -1,8 +1,8 @@
-const toggle = document.getElementById("themeToggle");
 
-toggle.addEventListener("click", function (e) {
-  e.preventDefault();
+const btn = document.getElementById("layoutToggle");
+const body = document.getElementById("body");
 
-  document.body.classList.toggle("darkmode");
+btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    body.classList.toggle("layout");
 });
-
