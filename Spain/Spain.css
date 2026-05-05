@@ -17,7 +17,7 @@
 nav{
 background-color: #9B2335;   
  display: flex;
- border-radius: 10px 10px 0 0;
+
     align-items:center;
     justify-content: space-between;
     padding-left:20px;
@@ -31,6 +31,11 @@ background-color: #9B2335;
     width: 450px;
     height: 250px;
     object-fit:cover;
+    
+    flex:1;
+background: linear-gradient(135deg,#fff0f0,#fdf0e0);
+    border:2px solid var(--secondary); 
+    border-radius:16px;
 border-radius : 12px;
 box-shadow: 0 0 24px rgba(0,0,0,0.5);
 }
@@ -361,6 +366,210 @@ padding-bottom:6px;
     color: #D4AF37;
     transform: translateY(-3px);
 }
+
+
+
+
+body.dark-mode {
+    background-color: #0f0f1a;
+    color: #e8d5a3;
+}
+body.dark-mode nav {
+    background-color: #1a0a0a;
+     display: flex;
+ border-radius: 10px 10px 0 0;
+}
+
+
+body.dark-mode .hero {
+    background-color: #0f0f1a;
+}
+
+
+body.dark-mode .title-block h1 {
+    color: #c9a84c;
+}
+
+body.dark-mode .title-block p {
+    color: #c9a84c;
+}
+
+body.dark-mode .title-block a {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .title-block a:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+
+body.dark-mode .info-card {
+    background: linear-gradient(135deg, #1a0f0f, #1a1a2e);
+    border-color: #c9a84c;
+    color: #e8d5a3;
+}
+
+body.dark-mode .info-card h2 {
+    color: #c9a84c;
+}
+
+body.dark-mode .info-card p,
+body.dark-mode .info-card li {
+    color: #e8d5a3;
+}
+body.dark-mode .line {
+    background-color: #c9a84c;
+}
+
+body.dark-mode .landmarks {
+    background-color: #0f0f1a;
+}
+
+body.dark-mode .landmarks h2 {
+    color: #c9a84c;
+}
+
+
+body.dark-mode .landmark-card {
+    background-color: #1a1a2e;
+    border-color: #2e2e4a;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .card-text h3 {
+    color: #c9a84c;
+}
+
+body.dark-mode .card-text p {
+    color: #b0a090;
+}
+
+body.dark-mode .card-link {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .card-link:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+body.dark-mode .booking {
+    background: linear-gradient(135deg, #1a0a0a, #0f0f1a);
+    border-color: #c9a84c;
+}
+
+body.dark-mode .bookingleft,
+body.dark-mode .bookingcenter,
+body.dark-mode .bookingright {
+    color: #e8d5a3;
+}
+
+body.dark-mode .bookingcenter h2 {
+    color: #c9a84c;
+}
+
+body.dark-mode .bookingprice {
+    color: #c9a84c;
+}
+
+body.dark-mode .bookingright a {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+    border-color: #c9a84c;
+}
+
+body.dark-mode .bookingright a:hover {
+    background-color: #c9a84c;
+    color: #1a0a0a;
+}
+
+
+body.dark-mode .rezero {
+    background-color: #1a0a0a;
+    color: #e8d5a3;
+}
+
+body.dark-mode .iconsss a {
+    color: #e8d5a3;
+}
+
+body.dark-mode .iconsss a:hover {
+    color: #c9a84c;
+}
+
+
+.s2ndhero{
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.hero.secondlayout {
+    flex-direction: row-reverse;
+}
+
+.hero.secondlayout .s2ndhero {
+    flex-direction: row-reverse;
+}
+.hero.secondlayout .s2ndhero .info-card {
+    margin:auto;
+    max-width: fit-content;
+}
+.hero.secondlayout .video-block video{
+    margin-right:30px;
+}
+
+.hero.secondlayout .s2ndhero .title-block{
+    margin-left :30px;
+}
+.hero.secondlayout .s2ndhero .title-block {
+    text-align: center;
+    
+}
+.hero.secondlayout .s2ndhero .title-block a {
+    text-align: center;
+    align-self: center;
+}
+.hero.secondlayout .s2ndhero .title-block .divider {
+   align-self: center;
+
+}
+.hero.secondlayout .s2ndhero .title-block .divider .line{
+   align-self: center;
+   width:180px;
+}
+
+.hero.secondlayout ~ .landmarks .landmarks-table {
+    flex-direction: column ;
+    align-items: center;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero.secondlayout ~ .landmarks .landmark-card img {
+    width: 300px;
+    height: 100%;
+}
+
+.hero.secondlayout ~ .landmarks .card-body {
+    flex: 1;
+}
+
+
+
+
+
+
 
 
 
