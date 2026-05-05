@@ -20,5 +20,12 @@ toggle.addEventListener("click", function (e) {
         alert("Phone number must be numbers only!");
         return;
     }
-    alert("Message sent successfully!");
+     alert("Message sent successfully!");
 }
+const menuBtn = document.getElementById("menuToggle");
+const nav = document.querySelector(".nav");
+const parent = document.querySelector(".perant");
+menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    parent.classList.toggle("menu-open");
+});
