@@ -35,7 +35,8 @@
                 <div class="link">
                     <a href="../contact us/contact_us.html"><i class="fa-solid fa-address-book"></i> Contact us</a>
                 </div>
-                <button id="theme-switch"><i class="fa-solid fa-moon"></i>
+                <button id="theme-switch"><i class="fa-solid fa-moon"></i></button>
+                <button id="menuToggle"><i class="fas fa-code-compare"></i></button>
             </div>
            
         </nav>
@@ -176,6 +177,29 @@
     <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
   </div>
 </footer>
+<script>
+        /* ── Layout Toggle ── */
+        const menuToggle = document.getElementById("menuToggle");
+        const perant = document.querySelector(".perant");
+
+        menuToggle.addEventListener("click", function() {
+            perant.classList.toggle("alt-layout");
+        });
+
+        /* ── Theme Toggle ── */
+        const themeSwitch = document.getElementById("theme-switch");
+        const themeIcon = themeSwitch.querySelector("i");
+
+        themeSwitch.addEventListener("click", function() {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+                themeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                themeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+    </script>
+
    
    
 </body>
