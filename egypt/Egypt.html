@@ -35,7 +35,7 @@
                 </div> 
                 <button id="menuToggle">
                     <i class="fas fa-code-compare"></i></button>
-                <button id="-switch">
+                <button id="theme-switch">
                     <i class="fas fa-moon"></i></button>
             </div>
         </nav>
@@ -202,9 +202,10 @@
             /* ── Layout Toggle ── */
             const menuToggle = document.getElementById("menuToggle");
             const perant = document.querySelector(".perant");
-
+            const nav = document.querySelector(".nav");
             menuToggle.addEventListener("click", function () {
                 perant.classList.toggle("alt-layout");
+                 nav.classList.toggle("active");
             });
 
             /* ── Theme Toggle ── */
