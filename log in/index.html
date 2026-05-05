@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"> <head>
+<html lang="en" dir="ltr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeless Treasure</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-
 </head>
 
-
-    <body class="light-mode"> 
+<body>
 
     <nav class="navbar">
         <div class="logo">
-            <img src="logo.png" alt="Treasures Logo"> 
+            <img src="img/logo.png" alt="Treasures Logo">
         </div>
-   <ul class="nav-links">
-    <li><a href="#"><i class="fas fa-home"></i> HOME</a></li>
-    <li><a href="#"><i class="fas fa-sign-in-alt"></i> LOGIN</a></li>
-    <li><a href="#"><i class="fas fa-globe"></i> COUNTRIES</a></li>
-    <li><a href="#"><i class="fas fa-envelope"></i> CONTACT US</a></li>
-    
-    <li><a href="#" class="sync-icon mode-toggle"><i class="fas fa-sun"></i></a></li>
-    
-    <li><a href="#" id="layoutToggle"><i class="fas fa-right-left"></i></a></li>
-</ul>
+        <ul class="nav-links">
+            <li><a href="../home/home.html"><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href="../log in/index.html"><i class="fas fa-sign-in-alt"></i> LOG IN</a></li>
+            <li><a href="../countries/countries.html"><i class="fas fa-globe"></i> COUNTRIES</a></li>
+            <li><a href="../contact us/contact_us.html"><i class="fas fa-envelope"></i> CONTACT US</a></li>
+            <li><button id="layoutToggle"><i class="fa-solid fa-grip"></i> LAYOUT</button></li>
+   <li><button id="theme-switch"><i class="fa-solid fa-moon"></i> <span class="theme-text dark-label">DARK MODE</span>
+    <span class="theme-text light-label">LIGHT MODE</span></button></li>
+        </ul>
     </nav>
-    
 
     <div class="perant">
         <div class="overlay"></div>
-        <div id="particles-js"></div>
 
         <div class="hero">
             <h1 class="main-title">Timeless Treasure</h1>
-            <p class="subtitle">Step through the threshold of time Discover the wonders of ancient civilizations and the stories carved in stone across the globe</p>
+            <p class="subtitle">Step through the threshold of time — Discover the wonders of ancient civilizations and the stories carved in stone across the globe</p>
 
             <div class="temple-form">
                 <h2>The Time Portal</h2>
@@ -59,7 +54,6 @@
     <footer class="main-footer">
         <div class="footer-content">
             <p class="copyright-text">© 2026 Global Monument Exploration project - Helwan University | Discover the glory of the world</p>
-
         </div>
         <div class="social">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -67,80 +61,34 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const modeToggle = document.querySelector('.sync-icon');
-    const body = document.body;
 
-    if (modeToggle) {
-        modeToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            body.classList.toggle('light-mode');
-            const icon = this.querySelector('i');
-            
-            if (body.classList.contains('light-mode')) {
-                icon.classList.replace('fa-moon', 'fa-sun'); 
-                icon.style.color = '#f4b400';
+    <script>
+        /* ── Theme Toggle ── */
+        const themeSwitch = document.getElementById("theme-switch");
+        const themeIcon = themeSwitch.querySelector("i");
+
+        themeSwitch.addEventListener("click", function () {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+                themeIcon.classList.replace("fa-moon", "fa-sun");
             } else {
-                icon.classList.replace('fa-sun', 'fa-moon'); 
-                icon.style.color = '#ad936d'; 
+                themeIcon.classList.replace("fa-sun", "fa-moon");
             }
         });
-    }
 
-    const layoutToggle = document.getElementById('layoutToggle');
-    if (layoutToggle) {
-        layoutToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-            console.log("Layout button clicked!"); 
-            document.body.classList.toggle('sidebar-mode');
-            
-            const icon = this.querySelector('i');
-            if (icon) {
-                if (document.body.classList.contains('sidebar-mode')) {
-                    icon.style.transform = 'rotate(90deg)'; 
-                } else {
-                    icon.style.transform = 'rotate(0deg)';
-                }
+        /* ── Layout Toggle ── */
+        const layoutToggle = document.getElementById("layoutToggle");
+        const layoutIcon = layoutToggle.querySelector("i");
+
+        layoutToggle.addEventListener("click", function () {
+            document.body.classList.toggle("sidebar-layout");
+            if (document.body.classList.contains("sidebar-layout")) {
+                layoutIcon.classList.replace("fa-grip", "fa-table-list");
+            } else {
+                layoutIcon.classList.replace("fa-table-list", "fa-grip");
             }
         });
-    }
-
-    const loginForm = document.getElementById('epicLogin');
-    if (loginForm) {
-        loginForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const usernameInput = this.querySelector('input[type="text"]');
-            const passwordInput = this.querySelector('input[type="password"]');
-            const username = usernameInput.value.trim();
-            const password = passwordInput.value;
-            
-            const nameRegex = /^[a-zA-Z\s\u0600-\u06FF]+$/;
-            if (!nameRegex.test(username)) {
-                alert("Please Enter The Name (Letters Only)");
-                usernameInput.focus();
-                return;
-            }
-            const passwordRegex = /^\d{8,}$/;
-            if (!passwordRegex.test(password)) {
-                alert("The Password Must be at least 8 digits Long (Numbers Only)");
-                passwordInput.focus();
-                return;
-            }
-            handleSuccess(username);
-        });
-    }
-});
-
-function handleSuccess(name) {
-    const btn = document.querySelector('.btn-epic');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Opening Portal...';  
-    setTimeout(() => {
-        alert(`Welcome back, ${name}.`);
-        btn.innerHTML = '<i class="fas fa-door-open"></i> Open The Time Portal';
-    }, 1000);
-}
-</script>
+    </script>
 
 </body>
 </html>
