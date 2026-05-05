@@ -620,3 +620,83 @@ i{
 .darkmode .footer-note:hover{
     color: goldenrod;
 }
+
+
+
+.sidebar-layout nav {
+    z-index: 1000;
+    background-color: #e8e3d8;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 130px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-layout .countries {
+    margin-left: 200px;
+    transition: all 0.5s ease;
+}
+
+.sidebar-layout nav + hr {
+    display: none;
+}
+
+.sidebar-layout ul {
+    flex-direction: column !important;
+    padding-left: 20px;
+}
+
+body.sidebar-layout nav ul li {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap; /*no wrap di bt5li kolo fe satr wa7ed mn8er ma ynzl t7t aw ay 7aga m4 7lwa*/
+}
+
+body.sidebar-layout button {
+    padding-left: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+body.sidebar-layout #theme-switch {
+    white-space: nowrap;
+}
+
+body.darkmode.sidebar-layout nav {
+    background-color: #1a140f;
+    border-right: 1px solid #a6894e;
+}
+
+
+.theme-text {
+    display: none;
+    font-weight: bold;
+}
+
+.light-label {
+    display: none;
+}
+
+body.sidebar-layout .dark-label {
+    display: inline;
+}
+
+body.sidebar-layout .light-label {
+    display: none;
+}
+
+body.sidebar-layout.darkmode .dark-label {
+    display: none;
+}
+
+body.sidebar-layout.darkmode .light-label {
+    display: inline; /*vice versa*/
+}
