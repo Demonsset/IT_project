@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ── NAV ───────────────────────────────────────────── */
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,7 +56,6 @@ nav {
     font-size: large;
 }
 
-/* ── BUTTONS ───────────────────────────────────────── */
 button {
     padding: 10px 20px;
     background-color: #ad936d;
@@ -90,7 +88,6 @@ button:hover {
     transform: translateY(-3px);
 }
 
-/* ── MAIN ──────────────────────────────────────────── */
 .all {
     flex: 1;
     display: flex;
@@ -117,7 +114,6 @@ button:hover {
     text-shadow: 0 1px 4px #ffffff33;
 }
 
-/* ── FOOTER ────────────────────────────────────────── */
 .footer {
     margin-top: auto;
     background-color: #fef8e7;
@@ -137,7 +133,6 @@ button:hover {
     padding-top: 5px;
 }
 
-/* ── DARK MODE ─────────────────────────────────────── */
 body.darkmode nav {
     background-color: #2b241c;
 }
@@ -165,7 +160,6 @@ body.darkmode .social a {
     color: #c2b096;
 }
 
-/* ── SIDEBAR LAYOUT ────────────────────────────────── */
 body.sidebar-layout nav {
     position: fixed;
     left: 0;
@@ -221,13 +215,13 @@ body.sidebar-layout .footer {
     transition: margin 0.4s ease;
 }
 
-/* ── DARK + SIDEBAR ────────────────────────────────── */
+
 body.darkmode.sidebar-layout nav {
     background-color: #1a140f;
     border-right: 1px solid #a6894e;
 }
 
-/* ── LABEL TOGGLE ──────────────────────────────────── */
+
 .theme-text {
     font-weight: bold;
 }
