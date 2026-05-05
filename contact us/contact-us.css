@@ -12,7 +12,7 @@ body{
     background: url(1.jpg) ;
     background-position: center;
     background-size: cover;
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -45,7 +45,6 @@ body{
     flex-wrap: wrap;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .link a {
     color: #342106;
     text-decoration-line: none;
@@ -53,7 +52,6 @@ body{
     gap: 5px;
     font-size: 18px;
 }
-
 .link a:hover {
     color: goldenrod;
     border-bottom: 1px solid goldenrod;
@@ -67,6 +65,10 @@ body{
     border: 2px solid rgba(215, 185, 17, 0);
     background-color: #dec4a600;
     transition: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #342106;
+    cursor: pointer;
 }
 #themeToggle:hover,
 #menuToggle:hover {
@@ -141,14 +143,14 @@ input{
 .send:hover{
     transform: scale(1.05);
 }
- footer{
+footer{
     width: 100%;
     height: 30%;
     gap: 30px;
     background-color:rgba(255, 249, 230, 0.64);
     align-items: center;
 }
- footer p {
+footer p {
     margin-top: 5px;
     font-size: 15px;
 }
@@ -161,7 +163,7 @@ input{
 } 
 .darkmode #themeToggle,
 .darkmode #menuToggle {
-    color: #f4dec5;
+    color: #feead3;
 }
 .darkmode #themeToggle:hover,
 .darkmode #menuToggle:hover {
@@ -202,12 +204,10 @@ input{
     align-items: center;
     padding-top: 15px;
     gap: 25px;
-    /* z-index: 1000; */
     transition: 0.3s;
     border: 2px solid #b8860b;
     border-radius: 20px;
 }
-
 .nav.active .links {
     display: flex;
     flex-direction: column;
@@ -215,19 +215,37 @@ input{
     height: 70vh;
     text-align: center;
 }
-
 .nav.active .logo1 {
     flex-direction: column;
 }
 .darkmode .nav.active {
     background-color: #342106d9;
 }
-
 .darkmode.nav.active .links {
     color: #feead3;
 }
- @media (max-width: 768px) {
-
+.theme-text {
+    font-weight: normal;
+}
+.dark-label {
+    display: none;
+}
+.light-label {
+    display: none;
+}
+.nav.active .dark-label {
+    display: inline;
+}
+.nav.active .light-label {
+    display: none;
+}
+.darkmode .nav.active .dark-label {
+    display: none;
+}
+.darkmode .nav.active .light-label {
+    display: inline;
+}
+@media (max-width: 768px) {
     .nav {
         flex-direction: column;
         height:auto;
@@ -235,9 +253,8 @@ input{
         padding: 10px 0;
     }
     .nav.active {
-            width:100px;
+        width:100px;
     }
-
     .links {
         width: 100%;
         justify-content: center;
@@ -250,64 +267,53 @@ input{
         margin: 90px auto;
         margin-left: 100px;
     }
-
     .in-form {
         align-items: flex-start;
         gap: 5px;
     }
-
     label {
         width: 30%;
         margin-left: 0;
     }
-
     input {
         width: 60%;
     }
-
     .send {
         width: 40%;
         font-size: 18px;
     }
 }
-@media(max-width: 1048px) and (min-width:769px)  {
+@media(max-width: 1048px) and (min-width:769px) {
     .nav {
-            flex-direction: column;
-            height: auto;
-            gap: 10px;
-            padding: 10px 0;
-        }
-    
-        .links {
-            width: 100%;
-            justify-content: center;
-            gap: 15px;
-            font-size: 16px;
-        }
-    
-        .all {
-            width: 75%;
-            height: auto;
-            margin: 94px auto;
-        }
-    
-        .in-form {
-            align-items: flex-start;
-            gap: 5px;
-        }
-    
-        label {
-            width: 30%;
-            margin-left: 0;
-        }
-    
-        input {
-            width: 60%;
-        }
-    
-        .send {
-            width: 40%;
-            font-size: 18px;
-        }
-   
-} 
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .links {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: 16px;
+    }
+    .all {
+        width: 75%;
+        height: auto;
+        margin: 94px auto;
+    }
+    .in-form {
+        align-items: flex-start;
+        gap: 5px;
+    }
+    label {
+        width: 30%;
+        margin-left: 0;
+    }
+    input {
+        width: 60%;
+    }
+    .send {
+        width: 40%;
+        font-size: 18px;
+    }
+}
