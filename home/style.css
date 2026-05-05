@@ -113,19 +113,17 @@ body {
 }
 
 
-button,
-button a {
+button {
   padding: 10px 20px;
   background-color: #ad936d;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  text-decoration: none;
+  
 }
 
-button,
-button a:hover {
+button:hover {
   background-color: #f4b400;
   padding: 10px 20px;
   background-color: #ad936d;
@@ -140,55 +138,61 @@ button:hover {
   background-color: #f4b400;
 }
 
-button a:hover {
-  background-color: #f4b400;
-}
-
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-body.darkmode {
+body.dark-mode {
   background-image: none;
   color:  #2b241c;
 }
 
-body.darkmode nav {
+body.dark-mode nav {
  
     background-color: #2b241c;
     
 }
 
-body.darkmode.navbar a {
+body.dark-mode.navbar a {
  color: #c2b096;
 }
 
-body.darkmode .footer {
+body.dark-mode .footer {
   background-color: #2b241c;
  
 }
 
-body.darkmode {
+body.dark-mode {
   background-image: url("WhatsApp\ Image\ 2026-04-30\ at\ 2.01.39\ AM.jpeg");
 
   
 
 }
-body.darkmode .menu-toggle {
+body.dark-mode .menu-toggle {
   color: #c2b096;
 }
   
-body.darkmode .social a {
+body.dark-mode .social a {
 color: #c2b096;
 }
 
-body.darkmode .navbar a:hover {
+body.dark-mode .navbar a:hover {
   color: #f4b400;
 }
 
-body.darkmode .navbar a.active {
+body.dark-mode .navbar a.active {
   color: #f4b400;
 }
 
-/* لاي */
+.layout nav {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  /* لاي */
 .layout .navbar {
     flex-direction: column;
     width: 100%;
