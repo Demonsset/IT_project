@@ -526,7 +526,7 @@ i{
 }
 
 .darkmode{
-    background-color: rgb(85, 60, 29) !important
+    background-color: rgb(14, 109, 84) !important
 }
 
 .darkmode #sun{
@@ -558,10 +558,6 @@ i{
     image: url(../sunny_24dp_9D7C42_FILL1_wght400_GRAD0_opsz24.png);
 }
 
-.darkmode .rome-container{
-    background-color: rgb(85, 60, 29) !important;
-
-}
 
 .darkmode .title-block{
     background-color: transparent;
@@ -572,15 +568,27 @@ i{
 }
 
 .darkmode .info-card{
-    background-color: #50350f;
+    background-color: #bc6513;
+}
+
+.darkmode .info-card h2{
+    color: #744e12;
 }
 
 .darkmode .monument-card{
     background-color: rgb(111, 77, 15);
 }
 
+.darkmode .monument-card p{
+    color: #2c2412;
+}
+
 .darkmode .ticket-card{
     background-color: #4a3303;
+}
+
+.darkmode .ticket-sub{
+    color: #917330;
 }
 
 .darkmode .ticket-details-row{
