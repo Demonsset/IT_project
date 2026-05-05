@@ -96,6 +96,7 @@ body {
     border-bottom-color: #c49a1b;
 }
 
+
 .imr{
     margin-left: 20%;
 }
@@ -150,7 +151,7 @@ body {
     font-family: 'UnifrakturCook';
     font-size: 54px;
     font-weight: 700;
-    margin: 8px 0, 0, 0;
+    margin: 8px 0 0 0;
     color: #3e2a10;
     text-transform: uppercase;
 }
@@ -521,12 +522,23 @@ i{
     display: none;
 }
 
+#theme-layout{
+    color: #4a3412;
+    background-color: #00000000;
+    border: solid #00000000;
+}
+
+#theme-layout:hover{
+    color: #c49a1b;
+    border-bottom-color: #c49a1b;
+}
+
 .darkmode #moon{
     display: none;
 }
 
 .darkmode{
-    background-color: rgb(14, 109, 84) !important
+    background-color: rgb(14, 109, 84) !important;
 }
 
 .darkmode #sun{
@@ -571,7 +583,7 @@ i{
 }
 
 .darkmode .info-card{
-    background-color: #bc6513;
+    background-color: #652f05;
 }
 
 .darkmode .info-card h2{
@@ -619,4 +631,44 @@ i{
 }
 .darkmode .footer-note:hover{
     color: goldenrod;
+}
+
+.sidebar-layout{
+    margin-top: 20px;
+}
+
+.sidebar-layout .nav-bar {
+    background-color: #e8e3d8c2;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-layout .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.sidebar-layout .nav-links a{
+    width: 100%;
+    margin-left: 15px;
+}
+
+.sidebar-layout .logo-area{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-layout .darkmode .nav-bar{
+    background-color: rgb(14, 109, 84) !important ;
 }

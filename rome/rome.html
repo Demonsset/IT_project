@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="../script.js" defer></script>
+    <script src="rome.js" defer></script>
 </head>
 <body>
     <div class="rome-container">
@@ -23,16 +24,23 @@
                 <img src="img/c.png" height="100" width="300">
             </div>
             </div>
+            <div class="sidebar">
+                <div class="change-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             <div class="nav-links">
                 <a href="../home/home.html"><i id="icon" class="fas fa-home"></i> Home</a>
                 <a href="../log in/index.html"><i id="icon" class="fas fa-arrow-right-to-bracket"></i> Login</a>
                 <a href="../countries/countries.html"><i id="icon" class="fas fa-earth-europe"></i> Countries</a>
-                <a href="../contact us/contact_us.html"><i id="icon" class="fas fa-address-book"></i> Contact Us</a>
-                <a href="#" title="Switch to the other style"><i id="icon" class="fas fa-code-compare"></i></a>
-                <button id="theme-switch">
+                <a href="../contact us/contact-us.html"><i id="icon" class="fas fa-address-book"></i> Contact Us</a>
+                <button id="theme-switch" title="Switch theme">
                     <i id="sun" class="fas fa-sun"></i>
                     <i id="moon" class="fas fa-moon"></i>
                 </button>
+                <button id="theme-layout" title="Switch layout"><i class="fas fa-code-compare"></i></button>
+            </div>
             </div>
         </div>
         <div class="body-section">
@@ -194,9 +202,45 @@
     </div>
 
     <script>
-        document.getElementById('bookRomeBtn')?.addEventListener('click', function(){
-            alert("✨ Thank you! Your journey to Ancient Rome awaits. Explore Colosseum, Pantheon & more. Tickets will be reserved.");
-        });
+        const themeSwitch = document.getElementById('theme-switch');
+const layoutBtn = document.getElementById('theme-layout');
+const iccon = document.getElementById('sun'); 
+const icon = document.getElementById('moon');
+
+
+function toggleDarkMode() {
+    document.body.classList.toggle('darkmode');
+
+    if (document.body.classList.contains('darkmode')) {
+        icon.className = 'fas fa-moon';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        iccon.className = 'fas fa-sun';
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+themeSwitch.addEventListener('click', toggleDarkMode);
+
+
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('darkmode');
+}
+
+layoutBtn.addEventListener('click', function () {
+    document.body.classList.toggle('sidebar-layout');
+
+    if (document.body.classList.contains('sidebar-layout')) {
+        localStorage.setItem('layout', 'sidebar');
+    } else {
+        localStorage.setItem('layout', 'topbar');
+    }
+});
+
+
+if (localStorage.getItem('layout') === 'sidebar') {
+    document.body.classList.add('sidebar-layout');
+}
     </script>
 </body>
 </html>
