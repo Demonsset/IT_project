@@ -7,6 +7,7 @@
     <title>Egypt</title>
     <link rel="stylesheet" href="Egypt.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
@@ -21,20 +22,20 @@
             </div>
             <div class="links">
                 <div class="link">
-                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="../home/home.html"><i class="fa-solid fa-house"></i> Home</a>
                 </div>
                 <div class="link">
-                    <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                    <a href="../log in/index.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
                 </div>
                 <div class="link">
-                    <a href=""><i  class="fas fa-earth-europe"></i> Countries</a>
+                    <a href="../countries/countries.html"><i  class="fas fa-earth-europe"></i> Countries</a>
                 </div>
                 <div class="link">
-                    <a href=""><i id="icon" class="fas fa-address-book"></i> Contact Us</a>
+                    <a href="../contact us/contact_us.html"><i id="icon" class="fas fa-address-book"></i> Contact Us</a>
                 </div> 
                 <button id="menuToggle">
                     <i class="fas fa-code-compare"></i></button>
-                <button id="themeToggle">
+                <button id="-switch">
                     <i class="fas fa-moon"></i></button>
             </div>
         </nav>
@@ -197,6 +198,28 @@
                 </div>
             </footer>  
         </div>
+        <script>
+            /* ── Layout Toggle ── */
+            const menuToggle = document.getElementById("menuToggle");
+            const perant = document.querySelector(".perant");
+
+            menuToggle.addEventListener("click", function () {
+                perant.classList.toggle("alt-layout");
+            });
+
+            /* ── Theme Toggle ── */
+            const themeSwitch = document.getElementById("theme-switch");
+            const themeIcon = themeSwitch.querySelector("i");
+
+            themeSwitch.addEventListener("click", function () {
+                document.body.classList.toggle("darkmode");
+                if (document.body.classList.contains("darkmode")) {
+                    themeIcon.classList.replace("fa-moon", "fa-sun");
+                } else {
+                    themeIcon.classList.replace("fa-sun", "fa-moon");
+                }
+            });
+        </script>
     </div>
     <script src="Egypt.js"></script>
 </body>
