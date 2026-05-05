@@ -70,10 +70,10 @@ nav {
 }
 #layoutToggle:hover {
     color: var(--heroTitle);
+    font-size: large;
     transform: translateY(-3px);
     padding: 4px;
     padding-bottom: 5px;
-    font-size: large;
     border-radius: 10px;
     border-bottom: var(--borderColor) 3px solid;
 }
@@ -90,10 +90,10 @@ nav {
 }
 #themeToggle:hover {
     color: var(--heroTitle);
+    font-size: large;
     transform: translateY(-3px);
     padding: 4px;
     padding-bottom: 5px;
-     font-size: large;
     border-radius: 10px;
     border-bottom: var(--borderColor) 3px solid;
 }
