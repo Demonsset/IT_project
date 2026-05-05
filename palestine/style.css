@@ -25,7 +25,21 @@ body.dark{
     --shadowHover: rgb(0, 0, 0, 0.5 );
     --borderColor:#9A8346;
 }
-
+#layoutToggle{
+   background-color: transparent;
+   color:white;
+   font-size:16px;
+   display: inline-block;
+   border-radius:50%;
+   border: none;
+   cursor:pointer;
+    transition: all 0.3s ease;
+}
+#layoutToggle:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color:var(--accent);
+    transform: translateY(-3px);
+}
 body{
   font-family: sans-serif;
   background-color:var(--bgMain) ;
