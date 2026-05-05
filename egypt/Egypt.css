@@ -65,7 +65,7 @@
     font-size:18px ;
     transition: 0.3s;
 } 
-#themeToggle:hover
+#theme-switch:hover
 ,#menuToggle:hover{
     color: goldenrod;
     border-bottom: 1px solid goldenrod;
@@ -345,18 +345,18 @@ footer p{
 .icons a:hover{
     color: #b8860b;
 }
- #themeToggle,#menuToggle{
+ #theme-switch,#menuToggle{
     margin-right: 10px;
     border-radius: 14px;
     border: 2px solid rgba(215, 185, 17, 0); 
     background-color: #dec4a600; 
     transition: 0.3s;
 } 
-.darkmode #themeToggle,
+.darkmode #theme-switch,
 .darkmode #menuToggle{
     color: #f4dec5;
 }
-.darkmode #themeToggle:hover,
+.darkmode #theme-switch:hover,
 .darkmode #menuToggle:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
@@ -413,7 +413,6 @@ footer p{
      align-items: center;
     padding-top: 15px;
     gap: 25px; 
-    /* z-index: 1000; */
      transition: 0.3s;
      border:2px solid #b8860b;
      border-radius: 20px;
@@ -428,21 +427,17 @@ footer p{
  .nav.active .logo1 {
      flex-direction: column;
  }
- /* .perant.menu-open{
-     transform: scale(0.80);
-      opacity: 0.8; 
- }*/
-.perant.menu-open .image,
-.perant.menu-open .ticket {
+.perant.alt-layout .image,
+.perant.alt-layout .ticket {
     width: 243px;
 }
-.perant.menu-open .images{
+.perant.alt-layout .images{
     margin-left: 200px;
 }
-.perant.menu-open .information{
+.perant.alt-layout .information{
     width: 30%;
 }
- .perant.menu-open .video{
+ .perant.alt-layout .video{
     margin-left:170px ;
 }
 .darkmode .nav.active {
@@ -515,17 +510,17 @@ footer p{
         position: static;
         margin-top: 10px;
     }
-        .perant.menu-open .image,
-        .perant.menu-open .ticket {
+        .perant.alt-layout .image,
+        .perant.alt-layout.ticket {
             width: 400px;
         }
     
-        .perant.menu-open .information {
+        .perant.alt-layout.information {
             width: 70%;
             margin-left: 200px;
         }
     
-        .perant.menu-open .video {
+        .perant.alt-layout .video {
             margin-left: 120px;
         }
 }

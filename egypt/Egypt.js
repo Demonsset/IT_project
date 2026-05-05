@@ -10,3 +10,6 @@ menuBtn.addEventListener("click", () => {
     nav.classList.toggle("active");
     parent.classList.toggle("menu-open");
 });
+document.getElementById("bookBtn").addEventListener("click", function () {
+    alert("Your booking has been confirmed!");
+});
