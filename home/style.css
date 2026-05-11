@@ -62,6 +62,13 @@ nav {
     flex-wrap: nowrap;
     
 }
+.exp a{
+    text-decoration: none;
+    color:white;
+    display: block;
+    flex-wrap: nowrap;
+    
+}
 button {
     padding: 10px 20px;
     background-color: #ad936d;
