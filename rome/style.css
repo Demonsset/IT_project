@@ -662,14 +662,11 @@ i{
 .sidebar-layout .nav-links a{
     width: 100%;
     margin-left: 15px;
+    font-size: 20px;
 }
 
 .sidebar-layout .logo-area{
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.sidebar-layout .darkmode .nav-bar{
-    background-color: rgb(14, 109, 84) !important ;
 }
