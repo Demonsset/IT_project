@@ -606,6 +606,7 @@ i{
     background-color: #e8e3d8c2;
     display: flex;
     position: fixed;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 360px;
