@@ -6,7 +6,6 @@ menuToggle.addEventListener("click", function () {
 
 const themeSwitch = document.getElementById("theme-switch");
 const themeIcon = themeSwitch.querySelector("i");
-
 themeSwitch.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
     if (document.body.classList.contains("darkmode")) {
