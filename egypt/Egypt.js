@@ -1,16 +1,20 @@
-const toggle = document.getElementById("themeToggle");
-toggle.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.body.classList.toggle("darkmode");
+const menuToggle = document.getElementById("menuToggle");
+const perant = document.querySelector(".perant");
+menuToggle.addEventListener("click", function () {
+    perant.classList.toggle("active");
 });
-const menuBtn = document.getElementById("menuToggle");
-const nav = document.querySelector(".nav");
-const parent = document.querySelector(".perant");
-menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    parent.classList.toggle("menu-open");
+
+const themeSwitch = document.getElementById("theme-switch");
+const themeIcon = themeSwitch.querySelector("i");
+
+themeSwitch.addEventListener("click", function () {
+    document.body.classList.toggle("darkmode");
+    if (document.body.classList.contains("darkmode")) {
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+    } else {
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+    }
 });
 document.getElementById("bookBtn").addEventListener("click", function () {
     alert("Your booking has been confirmed!");
 });
-

@@ -43,13 +43,13 @@
         <div class="all">
             <div class="bodyUp">
                <div>
-                    <video class="video" controls autoplay poster="images/10.jpg">
+                    <video class="video" controls poster="images/10.jpg">
                         <source src="video/2.mp4" type="video/mp4">
                     </video>
                 </div> 
                 <div class="center">
                     <div class="discover">discover the Wonders of</div>
-                    <div class="pp">Ancient Egypt</div>
+                    <div class="ancient">Ancient Egypt</div>
                     <div class="title-line">
                         <span class="line"></span>
                         <span class="key">☥</span>
@@ -68,13 +68,13 @@
                                 farming</p>
                         </b>
                         <ul>
-                            <li><b>King:</b>Menes - the unifier of Upper and Lower Egypt </li>
-                            <li><b>Rule:</b>The Pharaoh was considered a god and ruled the land </li>
-                            <li><b>Writing 𓂀:</b>Hieroglyphics (symbols and pictures) </li>
+                            <li><b>King:</b>Menes - the unifier of Upper and Lower Egypt. </li>
+                            <li><b>Rule:</b>The Pharaoh was considered a god and ruled the land. </li>
+                            <li><b>Writing 𓂀:</b>Hieroglyphics (symbols and pictures). </li>
                             <li><b>Paper:</b>Papyrus </li>
-                            <li><b>Belief ⚱:</b>Life after death and mummification </li>
-                            <li><b>Famous ▲:</b>Pyramids of Giza and temples </li>
-                            <li><b>Science:</b>Advanced in medicine, engineering, and astronomy </li>
+                            <li><b>Belief ⚱:</b>Life after death and mummification. </li>
+                            <li><b>Famous ▲:</b>Pyramids of Giza and temples. </li>
+                            <li><b>Science:</b>Advanced in medicine, engineering, and astronomy. </li>
                         </ul>
                     </div>
                 </div>
@@ -192,41 +192,15 @@
             <footer>
                 <p>©2026-Global Monuments Exploration project-Helwan university</p>
                 <div class="icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </footer>  
         </div>
-        <script>
-            
-            const menuToggle = document.getElementById("menuToggle");
-            const perant = document.querySelector(".perant");
-            const nav = document.querySelector(".nav");
-            menuToggle.addEventListener("click", function () {
-                perant.classList.toggle("alt-layout");
-                 nav.classList.toggle("active");
-            });
-
-            
-            const themeSwitch = document.getElementById("theme-switch");
-            const themeIcon = themeSwitch.querySelector("i");
-
-            themeSwitch.addEventListener("click", function () {
-                document.body.classList.toggle("darkmode");
-                if (document.body.classList.contains("darkmode")) {
-                    themeIcon.classList.replace("fa-moon", "fa-sun");
-                } else {
-                    themeIcon.classList.replace("fa-sun", "fa-moon");
-                }
-            });
-             document.getElementById("bookBtn").addEventListener("click", function () {
-                    alert("Your booking has been confirmed!");
-                });
-        </script>
     </div>
-     <script src="script.js"></script> 
-    <script src="Egypt.js"></script>
+     <script src="../script.js"></script> 
+    <script src="Egypt.js"></script> 
 </body>
 
 </html>
