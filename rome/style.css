@@ -460,16 +460,51 @@ i{
     color: #6b4e1e;
 }
 
-.footer-note:hover{
-    color: goldenrod;
-}
-
 .social{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     font-size: 24px;
+    color: #6b4e1e;
+}
+
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column;
+    }
+    .title-block h1 {
+        font-size: 40px;
+    }
+    .nav-links {
+        gap: 18px;
+    }
+    .info-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .rimg{
+        margin: 25px, 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .ticket-details-row {
+        flex-direction: column;
+    }
+    .divider-v {
+        width: 80%;
+        height: 2px;
+    }
+    .book-ticket-btn {
+        width: 100%;
+    }
+    .nav-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .landmarks-title h2 {
+        font-size: 28px;
+    }
 }
 
 #theme-switch{
@@ -627,11 +662,6 @@ i{
 .sidebar-layout .nav-links a{
     width: 100%;
     margin-left: 15px;
-    font-size: 26px;
-}
-
-.sidebar-layout button{
-    font-size: 28px;
 }
 
 .sidebar-layout .logo-area{
@@ -640,6 +670,6 @@ i{
     margin-bottom: 20px;
 }
 
-.darkmode .sidebar-layout .nav-bar{
-    background-color: rgb(23, 101, 80) !important ;
+.sidebar-layout .darkmode .nav-bar{
+    background-color: rgb(14, 109, 84) !important ;
 }

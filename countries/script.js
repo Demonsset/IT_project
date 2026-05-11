@@ -7,6 +7,7 @@ const icon = document.getElementById('theme-icons');
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 
+    // تبديل شكل الأيقونة فقط
     if (document.body.classList.contains('dark-mode')) {
         icon.className = 'fas fa-moon'; 
         localStorage.setItem('theme', 'dark');

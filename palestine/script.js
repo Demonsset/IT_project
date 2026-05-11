@@ -1,33 +1,16 @@
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = themeToggle.querySelector("i");
-const layoutToggle = document.getElementById("layoutToggle");
-const layoutIcon = layoutToggle.querySelector("i");
+const modeSwitch=document.getElementById('modeSwitch');
+const modeIcon=document.getElementById('modeIcon')
+const bodyElement =document.body;
+modeSwitch.addEventListener('click',(e) => {
+    bodyElement.classList.toggle('dark');
 
-if (localStorage.getItem("darkmode") === "active") {
-    document.body.classList.add("darkmode");
-    themeIcon.classList.replace("fa-moon", "fa-sun");
-}
-
-themeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("darkmode");
-    if (document.body.classList.contains("darkmode")) {
-        themeIcon.classList.replace("fa-moon", "fa-sun");
-        localStorage.setItem("darkmode", "active");
+    if (document.body.classList.contains('dark')) {
+        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.add('fa-moon');
     } else {
-        themeIcon.classList.replace("fa-sun", "fa-moon");
-        localStorage.setItem("darkmode", null);
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
     }
-});
-
-layoutToggle.addEventListener("click", function () {
-    document.body.classList.toggle("sidebar-layout");
-    if (document.body.classList.contains("sidebar-layout")) {
-        layoutIcon.classList.replace("fa-grip", "fa-table-list");
-    } else {
-        layoutIcon.classList.replace("fa-table-list", "fa-grip");
-    }
-});
-
-function showConfirmation() {
-    alert("Thank you! Your journey to Palestine awaits. Explore Jerusalem, Acre & more. Tickets will be reserved.");
-}
+} );
+function showConfirmation() { 
+    alert(" Thank you! Your journey to Palestine awaits. Explore Jerusalem, Acre & more. Tickets will be reserved.") ; }
