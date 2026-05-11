@@ -1,19 +1,10 @@
-// const themeToggle = document.getElementById("themeToggle");
-// const themeIcon = themeToggle.querySelector("i");
+
 const menuBtn = document.getElementById("menuToggle");
 const nav = document.querySelector(".nav");
 menuBtn.addEventListener("click", () => {
     nav.classList.toggle("active");
 
 });
-// themeToggle.addEventListener("click", function () {
-//     document.body.classList.toggle("darkmode");
-//     if (document.body.classList.contains("darkmode")) {
-//         themeIcon.classList.replace("fa-moon", "fa-sun");
-//     } else {
-//         themeIcon.classList.replace("fa-sun", "fa-moon");
-//     }
-//  });
 const themeSwitch = document.getElementById("theme-switch");
 const themeIcon = themeSwitch.querySelector("i");
 themeSwitch.addEventListener("click", function () {
