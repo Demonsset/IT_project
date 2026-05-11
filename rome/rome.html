@@ -207,26 +207,6 @@ const layoutBtn = document.getElementById('theme-layout');
 const sunIcon = document.getElementById('sun'); 
 const moonIcon = document.getElementById('moon');
 
-
-function toggleDarkMode() {
-    document.body.classList.toggle('darkmode');
-
-    if (document.body.classList.contains('darkmode')) {
-        icon.className = 'fas fa-moon';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        iccon.className = 'fas fa-sun';
-        localStorage.setItem('theme', 'light');
-    }
-}
-
-themeSwitch.addEventListener('click', toggleDarkMode);
-
-
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('darkmode');
-}
-
 layoutBtn.addEventListener('click', function () {
     document.body.classList.toggle('sidebar-layout');
 
