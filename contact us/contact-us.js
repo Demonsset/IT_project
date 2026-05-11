@@ -4,14 +4,14 @@ const menuBtn = document.getElementById("menuToggle");
 const nav = document.querySelector(".nav");
 const parent = document.querySelector(".perant");
 
-themeToggle.addEventListener("click", function () {
-    document.body.classList.toggle("darkmode");
-    if (document.body.classList.contains("darkmode")) {
-        themeIcon.classList.replace("fa-moon", "fa-sun");
-    } else {
-        themeIcon.classList.replace("fa-sun", "fa-moon");
-    }
-});
+// themeToggle.addEventListener("click", function () {
+//     document.body.classList.toggle("darkmode");
+//     if (document.body.classList.contains("darkmode")) {
+//         themeIcon.classList.replace("fa-moon", "fa-sun");
+//     } else {
+//         themeIcon.classList.replace("fa-sun", "fa-moon");
+//     }
+// });
 
 menuBtn.addEventListener("click", () => {
     nav.classList.toggle("active");
