@@ -444,6 +444,16 @@ footer p{
      border:2px solid #b8860b;
      border-radius: 20px;
  }
+ .nav.active .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 70vh;
+    text-align: center;
+ }
+ .nav.active .logo1 {
+     flex-direction: column;
+ }
  .alt-layout .images {
     display: flex;
     flex-wrap: wrap;
@@ -511,13 +521,4 @@ footer p{
     margin: 0 auto 30px auto;
     padding: 20px;
 }
-.nav.active .links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 70vh;
-    text-align: center;
- }
- .nav.active .logo1 {
-     flex-direction: column;
- }
+
