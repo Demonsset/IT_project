@@ -1,22 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     transition: 0.3s;
 }
-body{
+
+body {
     overflow-x: hidden;
-} 
+}
+
 .perant {
     width: 100%;
     min-height: 100vh;
-    background: url(1.jpg) ;
+    background: url(1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
 }
+
 .nav {
     width: 100%;
     height: 65px;
@@ -26,15 +29,18 @@ body{
     align-items: center;
     background-color: rgba(255, 249, 230, 0.693);
 }
+
 .logo1 {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .img {
     height: 80px;
     width: 80px;
 }
+
 .links {
     height: 50px;
     width: 40%;
@@ -45,6 +51,7 @@ body{
     flex-wrap: wrap;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .link a {
     color: #342106;
     text-decoration-line: none;
@@ -52,12 +59,14 @@ body{
     gap: 5px;
     font-size: 18px;
 }
+
 .link a:hover {
     color: goldenrod;
     border-bottom: 1px solid goldenrod;
     font-size: 18px;
     transition: 0.3s;
 }
+
 #theme-switch,
 #menuToggle {
     margin-right: 10px;
@@ -70,66 +79,89 @@ body{
     color: #342106;
     cursor: pointer;
 }
+
 #theme-switch:hover,
 #menuToggle:hover {
     color: goldenrod;
     border-bottom: 1px solid goldenrod;
     transition: 0.3s;
 }
-.all{
-    width: 30%;
-    height: 47vh;
+
+.all {
+    width: 80%;
+    min-height: 47vh;
     display: flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    flex-direction: row;
+    gap: 30px;
     border: 3px solid rgb(58, 39, 5);
     border-radius: 23px;
-    flex-direction: column;  
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.851);
     background-color: #6a4c22c7;
-    margin: auto;
+    margin: 30px auto;
+    padding: 20px;
 }
-h1{
-   font-size: 33px;
-   align-items: center;
-   font-family: cursive;
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid goldenrod;
+    padding-right: 20px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+h1 {
+    font-size: 33px;
+    align-items: center;
+    font-family: cursive;
     color: #2c1901;
     padding-top: 10px;
     padding-right: 10px;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .in-form {
     display: flex;
     align-items: center;
 }
-label{
-    font-family:cursive; 
-    font-size:21px ;
-    color:#2c1901 ;
+
+label {
+    font-family: cursive;
+    font-size: 21px;
+    color: #2c1901;
     display: flex;
     align-items: flex-start;
     width: 200px;
-    margin-left:10px ;
-} 
-input{
+    margin-left: 10px;
+}
+
+input {
     border-radius: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:16px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
     border: 2px solid rgb(200, 150, 26);
     height: 25px;
     width: 77%;
-    padding: 5px 10px; 
-    background-color:rgba(255, 248, 223, 0.904) ;
+    padding: 5px 10px;
+    background-color: rgba(255, 248, 223, 0.904);
     color: #342106;
     margin-right: 10px;
 }
-.send{
-    background-image: linear-gradient(to right,rgb(218, 144, 8),rgb(245, 200, 88));
+
+.send {
+    background-image: linear-gradient(to right, rgb(218, 144, 8), rgb(245, 200, 88));
     width: 35%;
     height: 30px;
     border-radius: 15px;
@@ -140,57 +172,116 @@ input{
     align-self: center;
     margin-top: 5px;
 }
-.send:hover{
+
+.send:hover {
     transform: scale(1.05);
 }
-footer{
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #2c1901;
+}
+
+.team-table thead {
+    background-color: goldenrod;
+    color: white;
+}
+
+.team-table th,
+.team-table td {
+    padding: 10px 14px;
+    text-align: center;
+    border: 1px solid rgba(58, 39, 5, 0.4);
+}
+
+.team-table tbody tr {
+    background-color: rgba(255, 248, 223, 0.85);
+}
+
+.team-table tbody tr:nth-child(even) {
+    background-color: rgba(222, 196, 166, 0.75);
+}
+
+
+
+footer {
     width: 100%;
     height: 30%;
-    gap: 30px;
-    background-color:rgba(255, 249, 230, 0.64);
+  
+    margin-top:180px;
+   
+    background-color: rgba(255, 249, 230, 0.64);
     align-items: center;
 }
+
 footer p {
     margin-top: 5px;
     font-size: 15px;
 }
+
 .icons a {
     color: #342106;
     margin: auto 7px;
 }
+
 .icons a:hover {
     color: #b8860b;
-} 
+}
+
 .darkmode #theme-switch,
 .darkmode #menuToggle {
     color: #feead3;
 }
+
 .darkmode #theme-switch,
 .darkmode #menuToggle:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     transition: 0.3s;
 }
-.darkmode .link a{
+
+.darkmode .link a {
     color: #feead3;
 }
+
 .darkmode .link a:hover {
     color: rgb(240, 188, 57);
     border-bottom: 1px solid rgb(247, 200, 83);
     font-size: 18px;
     transition: 0.3s;
 }
+
 .darkmode .nav,
 .darkmode footer {
     background-color: #281802cf;
     color: #feead3;
 }
+
 .darkmode .icons a {
     color: #f6e3cd;
 }
-.darkmode .icons a:hover{
+
+.darkmode .icons a:hover {
     color: rgb(240, 188, 57);
-} 
+}
+
+.darkmode .team-table tbody tr {
+    background-color: rgba(44, 25, 1, 0.8);
+    color: #feead3;
+}
+
+.darkmode .team-table tbody tr:nth-child(even) {
+    background-color: rgba(52, 33, 6, 0.8);
+}
+
+.darkmode .team-table th,
+.darkmode .team-table td {
+    border-color: rgba(184, 134, 11, 0.4);
+}
+
 .nav.active {
     position: fixed;
     top: 0;
@@ -208,6 +299,7 @@ footer p {
     border: 2px solid #b8860b;
     border-radius: 20px;
 }
+
 .nav.active .links {
     display: flex;
     flex-direction: column;
@@ -215,103 +307,141 @@ footer p {
     height: 70vh;
     text-align: center;
 }
+
 .nav.active .logo1 {
     flex-direction: column;
 }
+
 .darkmode .nav.active {
     background-color: #342106d9;
 }
+
 .darkmode.nav.active .links {
     color: #feead3;
 }
+
 .theme-text {
     font-weight: normal;
 }
+
 .dark-label {
     display: none;
 }
+
 .light-label {
     display: none;
 }
+
 .nav.active .dark-label {
     display: inline;
 }
+
 .nav.active .light-label {
     display: none;
 }
+
 .darkmode .nav.active .dark-label {
     display: none;
 }
+
 .darkmode .nav.active .light-label {
     display: inline;
 }
+
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
-        height:auto;
+        height: auto;
         gap: 10px;
         padding: 10px 0;
     }
+
     .nav.active {
-        width:100px;
+        width: 100px;
     }
+
     .links {
         width: 100%;
         justify-content: center;
         gap: 15px;
         font-size: 16px;
     }
+
     .all {
-        width: 68%;
-        height: auto;
-        margin: 90px auto;
-        margin-left: 100px;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
     }
+
+    .left-side {
+        border-right: none;
+        border-bottom: 2px solid goldenrod;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
     .in-form {
         align-items: flex-start;
         gap: 5px;
     }
+
     label {
         width: 30%;
         margin-left: 0;
     }
+
     input {
         width: 60%;
     }
+
     .send {
         width: 40%;
         font-size: 18px;
     }
 }
-@media(max-width: 1048px) and (min-width:769px) {
+
+@media (max-width: 1048px) and (min-width: 769px) {
     .nav {
         flex-direction: column;
         height: auto;
         gap: 10px;
         padding: 10px 0;
     }
+
     .links {
         width: 100%;
         justify-content: center;
         gap: 15px;
         font-size: 16px;
     }
+
     .all {
+        flex-direction: column;
         width: 75%;
-        height: auto;
-        margin: 94px auto;
+        margin: 20px auto;
     }
+
+    .left-side {
+        border-right: none;
+        border-bottom: 2px solid goldenrod;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
     .in-form {
         align-items: flex-start;
         gap: 5px;
     }
+
     label {
         width: 30%;
         margin-left: 0;
     }
+
     input {
         width: 60%;
     }
+
     .send {
         width: 40%;
         font-size: 18px;
