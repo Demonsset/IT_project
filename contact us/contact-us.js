@@ -1,23 +1,21 @@
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = themeToggle.querySelector("i");
+
 const menuBtn = document.getElementById("menuToggle");
 const nav = document.querySelector(".nav");
-const parent = document.querySelector(".perant");
+menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
 
-themeToggle.addEventListener("click", function () {
+});
+const themeSwitch = document.getElementById("theme-switch");
+const themeIcon = themeSwitch.querySelector("i");
+themeSwitch.addEventListener("click", function () {
     document.body.classList.toggle("darkmode");
     if (document.body.classList.contains("darkmode")) {
         themeIcon.classList.replace("fa-moon", "fa-sun");
-    } else {
+    }
+    else {
         themeIcon.classList.replace("fa-sun", "fa-moon");
     }
 });
-
-menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-    parent.classList.toggle("menu-open");
-});
-
 document.querySelector(".send").onclick = function () {
     let name = document.getElementById("name").value.trim();
     let email = document.getElementById("email").value.trim();

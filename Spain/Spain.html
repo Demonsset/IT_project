@@ -182,18 +182,18 @@
 </footer>
 
 <script>
-    /* ── Icon sync with global dark mode ── */
+
     const themeBtn = document.getElementById("theme-switch");
     const themeIcon = themeBtn.querySelector("i");
 
-    /* set correct icon on page load */
+
     if (localStorage.getItem("darkmode") === "active") {
         themeIcon.className = "fa-solid fa-sun";
     } else {
         themeIcon.className = "fa-solid fa-moon";
     }
 
-    /* swap icon on each click */
+
     themeBtn.addEventListener("click", function() {
         if (themeIcon.classList.contains("fa-sun")) {
             themeIcon.className = "fa-solid fa-moon";
@@ -202,7 +202,7 @@
         }
     });
 
-    /* ── Layout Toggle ── */
+
     const layouttoggle = document.getElementById("layoutToggle");
     const icons = layouttoggle.querySelector("i");
     const hero = document.querySelector(".hero");
