@@ -1,4 +1,4 @@
-const modeSwitch=document.getElementById('theme-Switch');
+const modeSwitch=document.getElementById('theme-switch');
 const modeIcon=document.getElementById('modeIcon')
 const bodyElement =document.body;
 modeSwitch.addEventListener('click',(e) => {
