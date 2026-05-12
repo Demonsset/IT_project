@@ -430,33 +430,6 @@ footer p{
 .darkmode .icons a{
      color: #f0d9a0;
 }
-.nav.active {
-     position: fixed;
-     top: 0;
-     left: 0; 
-     height: 98vh;
-     width: 170px;
-     background:rgb(255, 249, 230) ;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-    padding-top: 15px;
-    gap: 25px; 
-     transition: 0.3s;
-     border:2px solid #b8860b;
-     border-radius: 20px;
- }
- .nav.active .links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 70vh;
-    text-align: center;
- }
- .nav.active .logo1 {
-     flex-direction: column;
- }
  .alt-layout .images {
     display: flex;
     flex-wrap: wrap;
